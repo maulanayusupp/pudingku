@@ -53,14 +53,11 @@ const panels = computed(() =>
           :class="`pk-split__panel--${panel.key}`"
         >
           <div class="pk-split__art">
-            <NuxtImg
+            <ProductImage
               v-if="panel.cover"
               :src="panel.cover.image"
-              :alt="''"
+              alt=""
               aria-hidden="true"
-              width="1000"
-              height="1000"
-              sizes="(max-width: 768px) 60vw, 320px"
               loading="lazy"
             />
           </div>

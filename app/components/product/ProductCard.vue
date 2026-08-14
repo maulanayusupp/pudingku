@@ -67,13 +67,10 @@ const addToCart = () => {
 
     <div class="pk-card__media">
       <span class="pk-card__halo" aria-hidden="true" />
-      <NuxtImg
+      <ProductImage
         :src="product.image"
         :alt="t('a11y.productImage', { name: product.name })"
         class="pk-card__image"
-        width="1000"
-        height="1000"
-        sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 320px"
         :loading="loading ?? 'lazy'"
       />
 

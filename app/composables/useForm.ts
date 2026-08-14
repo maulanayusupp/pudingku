@@ -17,7 +17,12 @@ export type FormStatus = 'idle' | 'submitting' | 'success' | 'error'
 
 export interface UseFormOptions<TValues extends Record<string, string>, TResult> {
   initial: TValues
-  schema: Schema<TValues>
+  /**
+   * Validation rules. Accepts a getter or a ref so a form can add or drop rules
+   * as the user changes something — the checkout only validates the address
+   * fields once "deliver to me" is selected.
+   */
+  schema: MaybeRefOrGetter<Schema<TValues>>
   submit: (values: TValues) => Promise<TResult>
   onSuccess?: (result: TResult) => void | Promise<void>
 }
@@ -36,9 +41,19 @@ export function useForm<TValues extends Record<string, string>, TResult>(
 
   const isSubmitting = computed(() => status.value === 'submitting')
 
+  /** Always read through this so conditional rules are picked up. */
+  const currentSchema = (): Schema<TValues> => toValue(options.schema)
+
   function validateField(field: keyof TValues): void {
     touched.value.add(field)
-    const scoped = validate(values, { [field]: options.schema[field] } as Schema<TValues>)
+    const rules = currentSchema()[field]
+    if (!rules) {
+      const { [field]: _skipped, ...rest } = errors.value
+      errors.value = rest as Errors<TValues>
+      return
+    }
+
+    const scoped = validate(values, { [field]: rules } as Schema<TValues>)
     if (scoped[field]) {
       errors.value = { ...errors.value, [field]: scoped[field] }
     } else {
@@ -61,8 +76,9 @@ export function useForm<TValues extends Record<string, string>, TResult>(
 
   async function handleSubmit(): Promise<void> {
     formError.value = null
-    errors.value = validate(values, options.schema)
-    touched.value = new Set(Object.keys(options.schema) as (keyof TValues)[])
+    const schema = currentSchema()
+    errors.value = validate(values, schema)
+    touched.value = new Set(Object.keys(schema) as (keyof TValues)[])
 
     if (hasErrors(errors.value)) {
       status.value = 'error'

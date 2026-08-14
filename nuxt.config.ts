@@ -104,17 +104,18 @@ export default defineNuxtConfig({
     // Localised URLs: Indonesian visitors get Indonesian slugs, which is the
     // primary market. Page keys map to files under `app/pages`.
     customRoutes: 'config',
+    // Keys are page file paths relative to `app/pages`, without the extension.
     pages: {
-      products: { id: '/produk', en: '/products' },
-      'products-slug': { id: '/produk/[slug]', en: '/products/[slug]' },
-      cart: { id: '/keranjang', en: '/cart' },
-      checkout: { id: '/checkout', en: '/checkout' },
-      'checkout-success': { id: '/checkout/berhasil', en: '/checkout/success' },
-      about: { id: '/tentang', en: '/about' },
-      contact: { id: '/kontak', en: '/contact' },
-      faq: { id: '/tanya-jawab', en: '/faq' },
-      compliance: { id: '/kepatuhan', en: '/compliance' },
-      'compliance-doc': { id: '/kepatuhan/[doc]', en: '/compliance/[doc]' },
+      'products/index': { id: '/produk', en: '/products' },
+      'products/[slug]': { id: '/produk/[slug]', en: '/products/[slug]' },
+      'cart': { id: '/keranjang', en: '/cart' },
+      'checkout/index': { id: '/checkout', en: '/checkout' },
+      'checkout/success': { id: '/checkout/berhasil', en: '/checkout/success' },
+      'about': { id: '/tentang', en: '/about' },
+      'contact': { id: '/kontak', en: '/contact' },
+      'faq': { id: '/tanya-jawab', en: '/faq' },
+      'compliance/index': { id: '/kepatuhan', en: '/compliance' },
+      'compliance/[doc]': { id: '/kepatuhan/[doc]', en: '/compliance/[doc]' },
     },
   },
 

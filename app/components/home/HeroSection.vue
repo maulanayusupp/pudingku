@@ -78,13 +78,10 @@ const stats = computed(() => [
           class="pk-hero__layer"
           :class="`pk-hero__layer--${index + 1}`"
         >
-          <NuxtImg
+          <ProductImage
             :src="product.image"
             :alt="index === 0 ? t('a11y.productImage', { name: product.name }) : ''"
             :aria-hidden="index === 0 ? undefined : 'true'"
-            width="1000"
-            height="1000"
-            sizes="(max-width: 768px) 70vw, 460px"
             :loading="index === 0 ? 'eager' : 'lazy'"
             :preload="index === 0"
           />

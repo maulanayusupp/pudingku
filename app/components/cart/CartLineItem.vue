@@ -27,12 +27,10 @@ const lineTotal = computed(() => props.line.priceIdr * props.line.quantity)
 <template>
   <li class="pk-line" :class="{ 'is-dense': dense }">
     <NuxtLink :to="localePath(`/produk/${line.slug}`)" class="pk-line__thumb">
-      <NuxtImg
+      <ProductImage
         :src="line.image"
         :alt="t('a11y.productImage', { name: line.name })"
-        width="180"
-        height="180"
-        sizes="96px"
+        :size="180"
         loading="lazy"
       />
     </NuxtLink>
