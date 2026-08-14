@@ -133,7 +133,7 @@ useSeoPage(() => ({
         :eyebrow="t('checkout.eyebrow')"
         :title="t('checkout.title')"
         :description="t('checkout.description')"
-        :level="2"
+        :level="1"
       />
 
       <ClientOnly>

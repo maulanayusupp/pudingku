@@ -102,12 +102,18 @@ Setelah diisi: flip `verified: true`, lalu perbarui halaman
       lebih dulu (lihat bagian 0).
 - [ ] OG image per produk (butuh `@nuxtjs/og-image` atau render manual).
 - [ ] Analitik yang menghormati privasi (Plausible / Umami).
-      **Catatan:** begitu analitik dipasang, `CookieNotice` harus diganti dari
-      pemberitahuan menjadi consent manager yang sebenarnya, dan
-      `compliance.docs.cookies` + `compliance.docs.privacy` wajib diperbarui di
-      kedua bahasa.
+      **Catatan:** website ini sekarang tidak memasang cookie sama sekali.
+      Begitu analitik dipasang, `CookieNotice` harus diganti dari pemberitahuan
+      menjadi consent manager yang sebenarnya, dan `compliance.docs.cookies` +
+      `compliance.docs.privacy` wajib diperbarui di kedua bahasa.
 
 ## 6. Bahasa
+
+- [ ] Pertimbangkan ulang deteksi bahasa peramban. Sekarang **dimatikan** supaya
+      `/` selalu Bahasa Indonesia sesuai kebutuhan. Kalau nanti ingin
+      mengarahkan pengunjung berbahasa Inggris secara otomatis, aktifkan lewat
+      tombol pilihan pengguna — bukan `Accept-Language` — dan perbarui
+      `compliance.docs.cookies` bila itu memerlukan cookie.
 
 - [ ] Tambah bahasa ketiga bila perlu (mis. `zh` untuk pasar tertentu):
       daftarkan di `nuxt.config` → `i18n.locales`, tambahkan

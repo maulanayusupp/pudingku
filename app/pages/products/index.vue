@@ -77,7 +77,7 @@ useSeoPage(() => ({
           :eyebrow="t('products.eyebrow')"
           :title="t('products.title')"
           :description="t('products.description')"
-          :level="2"
+          :level="1"
         />
       </div>
     </header>

@@ -315,6 +315,7 @@
     "submitting": "Calculating…",
     "orderSummary": "Order summary",
     "success": {
+      "pageTitle": "Order status",
       "title": "Order summary created",
       "reference": "Reference number",
       "body": "Keep this number. Because no payment system is connected yet, the next step is emailing this reference to {email} so your order actually enters the queue.",
@@ -493,7 +494,7 @@
             "h": "What is stored on your device",
             "p": [
               "The contents of your cart are kept in your browser's local storage so they survive a page reload. That data lives on your device, is never sent to our server, and can be cleared at any time from your browser settings.",
-              "Your language preference is stored in a single cookie named pk_locale so the site opens in the same language when you return."
+              "This website sets no cookies at all. The active language is carried by the address instead — Indonesian on the main address, English under /en — so nothing needs to be stored in your browser."
             ]
           },
           {
@@ -726,21 +727,21 @@
           {
             "h": "In short",
             "p": [
-              "This website uses no advertising cookies and no analytics cookies. We store only what is needed for the site to behave the way you expect."
+              "This website sets no cookies at all — no advertising, no analytics, not even functional ones. All that exists is two entries in your browser's local storage."
             ]
           },
           {
             "h": "What we store",
+            "p": ["Both live in your browser's local storage rather than in a cookie, so neither is ever transmitted to our server:"],
             "ul": [
-              "pk_locale — a cookie holding your language choice, so pages open in the same language when you return.",
-              "pk.cart.v1 — local storage holding the products and quantities in your cart. Product codes and counts only; no personal data.",
-              "pk.consent.v1 — local storage recording that you dismissed the cookie notice."
+              "pk.cart.v1 — the products and quantities in your cart. Product codes and counts only; no personal data.",
+              "pk.consent.v1 — a record that you dismissed this notice."
             ]
           },
           {
             "h": "How to clear it",
             "p": [
-              "All of it can be cleared from your browser settings, usually under privacy or site data. Clearing it empties your cart and resets the language to the default."
+              "Both can be cleared from your browser settings, usually under privacy or site data. Clearing them empties your cart; your language choice is unaffected, because it is never stored."
             ]
           },
           {
@@ -769,7 +770,7 @@
 
   "cookieBanner": {
     "title": "About cookies",
-    "body": "We only store your language choice and the contents of your cart. No advertising or analytics cookies.",
+    "body": "This website sets no cookies at all. The only thing stored is your cart, and it stays in your own browser.",
     "accept": "Got it",
     "readPolicy": "Read more"
   },

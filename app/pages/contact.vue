@@ -76,7 +76,7 @@ useSeoPage(() => ({
         :eyebrow="t('contact.eyebrow')"
         :title="t('contact.title')"
         :description="t('contact.description')"
-        :level="2"
+        :level="1"
       />
 
       <div class="pk-contact__grid">

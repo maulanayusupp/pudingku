@@ -90,14 +90,14 @@ export default defineNuxtConfig({
       { code: 'id', language: 'id-ID', name: 'Bahasa Indonesia', file: 'id.json', dir: 'ltr' },
       { code: 'en', language: 'en-US', name: 'English', file: 'en.json', dir: 'ltr' },
     ],
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'pk_locale',
-      cookieCrossOrigin: false,
-      redirectOn: 'root',
-      alwaysRedirect: false,
-      fallbackLocale: 'id',
-    },
+    // Browser-language detection is OFF on purpose. With it enabled, a visitor
+    // whose browser prefers English got 302-redirected from `/` to `/en`, which
+    // contradicts the requirement that Indonesian is the default. The active
+    // language is carried by the URL instead — shareable, cacheable, and
+    // unambiguous — and the language switcher links to the equivalent page.
+    // Side effect: no `pk_locale` cookie is set, so the site now sets no
+    // cookies at all. Keep `/kepatuhan/cookies` in step with that.
+    detectBrowserLanguage: false,
     bundle: {
       optimizeTranslationDirective: false,
     },
@@ -139,6 +139,26 @@ export default defineNuxtConfig({
     mode: 'svg',
     class: 'pk-icon',
     size: '1.25em',
+    // The collection is pinned explicitly. Left on `auto`, the server bundle
+    // failed to resolve every `ph:*` name and SSR emitted empty `<svg>` tags —
+    // icons only appeared after client hydration, which meant a visible pop-in
+    // and no icons at all without JS.
+    serverBundle: {
+      collections: ['ph'],
+    },
+    // Inlines every icon used in the source so none is fetched at runtime.
+    //
+    // `globInclude` is overridden on purpose: the scanner skips plain .ts files
+    // by default, and several icon names are only referenced through constant
+    // maps (`app/constants/navigation.ts`, `app/composables/useAllergens.ts`).
+    // Without .ts in the scan those icons resolved to empty `<svg>` tags during
+    // SSR and only appeared after hydration.
+    clientBundle: {
+      scan: {
+        globInclude: ['app/**/*.{vue,ts}'],
+      },
+      sizeLimitKb: 320,
+    },
   },
 
   fonts: {

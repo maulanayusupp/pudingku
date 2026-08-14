@@ -10,8 +10,11 @@ interface Props {
   title: string
   description?: string
   align?: 'start' | 'center'
-  /** Heading level — sections nested inside an article need `h3`. */
-  level?: 2 | 3
+  /**
+   * Heading level. Use `1` when this block IS the page title — every page must
+   * have exactly one `<h1>`. Use `2` for sections, `3` when nested inside one.
+   */
+  level?: 1 | 2 | 3
   /** Narrower measure for centred intros. */
   narrow?: boolean
 }

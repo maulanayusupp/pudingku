@@ -315,6 +315,7 @@
     "submitting": "Menghitung…",
     "orderSummary": "Ringkasan pesanan",
     "success": {
+      "pageTitle": "Status pesanan",
       "title": "Ringkasan pesanan dibuat",
       "reference": "Nomor referensi",
       "body": "Simpan nomor ini. Karena belum ada sistem pembayaran, langkah berikutnya adalah mengirim nomor ini ke {email} supaya pesanan kamu benar-benar masuk antrean.",
@@ -493,7 +494,7 @@
             "h": "Yang disimpan di perangkat kamu",
             "p": [
               "Isi keranjang belanja disimpan di penyimpanan lokal peramban kamu (localStorage) supaya tidak hilang saat halaman dimuat ulang. Data ini ada di perangkat kamu, tidak dikirim ke server kami, dan bisa kamu hapus kapan saja lewat pengaturan peramban.",
-              "Pilihan bahasa disimpan dalam satu cookie bernama pk_locale supaya website terbuka dalam bahasa yang sama saat kamu kembali."
+              "Website ini tidak memasang cookie sama sekali. Pilihan bahasa dibawa oleh alamat halaman — versi Indonesia di alamat utama, versi Inggris di bawah /en — sehingga tidak perlu disimpan di peramban kamu."
             ]
           },
           {
@@ -726,21 +727,21 @@
           {
             "h": "Ringkasnya",
             "p": [
-              "Website ini tidak memakai cookie iklan maupun cookie analitik. Yang kami simpan hanya hal-hal yang dibutuhkan supaya website berfungsi seperti yang kamu harapkan."
+              "Website ini tidak memasang cookie sama sekali — tidak ada cookie iklan, analitik, maupun cookie fungsional. Yang ada hanya dua entri di penyimpanan lokal peramban kamu."
             ]
           },
           {
             "h": "Yang kami simpan",
+            "p": ["Keduanya disimpan di penyimpanan lokal (localStorage) peramban kamu, bukan sebagai cookie, sehingga tidak pernah ikut terkirim ke server kami:"],
             "ul": [
-              "pk_locale — cookie berisi pilihan bahasa kamu, supaya halaman terbuka dalam bahasa yang sama saat kembali.",
-              "pk.cart.v1 — penyimpanan lokal berisi daftar produk dan jumlah di keranjang kamu. Hanya kode produk dan jumlahnya; tidak ada data pribadi.",
-              "pk.consent.v1 — penyimpanan lokal yang mencatat bahwa kamu sudah menutup pemberitahuan cookie."
+              "pk.cart.v1 — daftar produk dan jumlah di keranjang kamu. Hanya kode produk dan jumlahnya; tidak ada data pribadi.",
+              "pk.consent.v1 — catatan bahwa kamu sudah menutup pemberitahuan ini."
             ]
           },
           {
             "h": "Cara menghapusnya",
             "p": [
-              "Semuanya bisa dihapus lewat pengaturan peramban kamu, biasanya di bagian privasi atau data situs. Menghapusnya akan mengosongkan keranjang dan mengembalikan bahasa ke pengaturan awal."
+              "Keduanya bisa dihapus lewat pengaturan peramban kamu, biasanya di bagian privasi atau data situs. Menghapusnya akan mengosongkan keranjang kamu; pilihan bahasa tidak terpengaruh karena memang tidak disimpan."
             ]
           },
           {
@@ -769,7 +770,7 @@
 
   "cookieBanner": {
     "title": "Soal cookie",
-    "body": "Kami hanya menyimpan pilihan bahasa dan isi keranjang kamu. Tidak ada cookie iklan atau analitik.",
+    "body": "Website ini tidak memasang cookie sama sekali. Yang disimpan hanya isi keranjang kamu, dan itu ada di peramban kamu sendiri.",
     "accept": "Mengerti",
     "readPolicy": "Baca selengkapnya"
   },

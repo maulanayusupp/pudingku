@@ -39,15 +39,24 @@ useSeoPage(() => ({
 <template>
   <div class="pk-success pk-section">
     <div class="pk-container--narrow">
+      <!--
+        The h1 lives outside <ClientOnly> so the page always has exactly one
+        top-level heading, even before hydration. It is deliberately neutral:
+        "order created" would be false in the no-order state.
+      -->
+      <h1 class="pk-success__pageTitle">
+        {{ t('checkout.success.pageTitle') }}
+      </h1>
+
       <ClientOnly>
         <div v-if="order" class="pk-success__panel">
           <span class="pk-success__mark" aria-hidden="true">
             <Icon name="ph:receipt-duotone" />
           </span>
 
-          <h1 class="pk-success__title">
+          <h2 class="pk-success__title">
             {{ t('checkout.success.title') }}
-          </h1>
+          </h2>
 
           <div class="pk-success__reference">
             <p class="pk-success__referenceLabel">
@@ -129,6 +138,13 @@ useSeoPage(() => ({
 <style lang="scss" scoped>
 @use 'abstracts' as *;
 
+.pk-success__pageTitle {
+  @include display(26px, 40px);
+
+  color: var(--pk-plum-800);
+  margin-block-end: var(--pk-space-6);
+}
+
 .pk-success__panel {
   display: flex;
   flex-direction: column;
@@ -154,8 +170,9 @@ useSeoPage(() => ({
 }
 
 .pk-success__title {
-  @include display(26px, 40px);
-
+  font-family: var(--pk-font-display);
+  font-size: fluid(22px, 30px);
+  font-weight: 600;
   color: var(--pk-plum-800);
 }
 

@@ -130,6 +130,9 @@ scripts/                  generator ilustrasi produk & favicon
 ### 3.6 SEO
 
 * Setiap halaman memanggil `useSeoPage({ title, description, … })`.
+* **Setiap halaman wajib punya tepat satu `<h1>`.** Kalau judul halaman dirender
+  lewat `SectionHeading`, kirim `:level="1"`. Kalau isi halaman ada di dalam
+  `<ClientOnly>`, letakkan `<h1>` di luarnya supaya tetap ada saat SSR.
 * Halaman keranjang/checkout: `noindex: true` (dan sudah di-`disallow` di
   robots.txt).
 * Structured data dibangun dari **data yang sama** dengan yang ditampilkan.
@@ -188,6 +191,11 @@ Saat integrasi nyata dipasang, hapus notice-nya **dan** perbarui:
 * Bahasa default **ID tanpa prefix URL**; EN di bawah `/en`.
 * URL ikut bahasa: `/produk` ↔ `/en/products`. Peta ada di `nuxt.config` →
   `i18n.pages`, dengan kunci = path file di `app/pages` tanpa ekstensi.
+* **`detectBrowserLanguage` sengaja dimatikan.** Saat aktif, pengunjung dengan
+  peramban berbahasa Inggris di-302 dari `/` ke `/en`, yang bertentangan dengan
+  aturan "default ID". Bahasa aktif dibawa oleh URL, dan `LanguageSwitcher`
+  menautkan ke halaman setara. Efek sampingnya: **website ini tidak memasang
+  cookie sama sekali** — jaga agar `/kepatuhan/cookies` tetap sesuai.
 * **Setiap teks statis baru WAJIB ditambahkan ke `i18n/locales/id.json` DAN
   `i18n/locales/en.json` pada saat yang sama.** Tidak boleh ada string
   hardcoded di komponen.
@@ -195,6 +203,11 @@ Saat integrasi nyata dipasang, hapus notice-nya **dan** perbarui:
   (`{ id: '…', en: '…' }`), bukan di file locale.
 * Karakter `@` di dalam pesan harus di-escape jadi `{'@'}` — vue-i18n
   memperlakukan `@` sebagai penanda linked message.
+* **Jangan memanggil `useI18n()` di dalam body setup sebuah plugin.** Instance
+  vue-i18n baru ada setelah plugin i18n terpasang; memanggilnya lebih awal
+  melempar `Must be called at the top of a setup function`, menggagalkan
+  inisialisasi aplikasi, dan **membuat halaman jadi blank**. Baca locale lewat
+  `nuxtApp.$i18n` di dalam hook `app:mounted` (lihat `plugins/cart.client.ts`).
 * Pluralisasi pakai format `"{count} item | {count} item"` dan dipanggil
   `t('key', count, { count })`.
 * Setiap penambahan halaman compliance: tambahkan slug ke `COMPLIANCE_DOCS`
@@ -209,6 +222,22 @@ Saat integrasi nyata dipasang, hapus notice-nya **dan** perbarui:
 | `npm run art:products` | 16 SVG di `public/images/products/` |
 | `npm run art:favicon` | favicon.ico/svg, apple-touch-icon, ikon PWA, `site.webmanifest`, OG image |
 | `npm run art:all` | keduanya |
+
+### Ikon
+
+Semua ikon berasal dari koleksi `ph` (Phosphor) yang **terpasang lokal**
+(`@iconify-json/ph`) — tidak ada permintaan jaringan saat runtime.
+
+`icon.clientBundle.scan.globInclude` sengaja di-override menjadi
+`['app/**/*.{vue,ts}']`. Pemindai bawaan **melewatkan berkas `.ts`**, padahal
+sebagian nama ikon hanya disebut lewat peta konstanta
+(`app/constants/navigation.ts`, `app/composables/useAllergens.ts`). Tanpa `.ts`
+dalam pemindaian, ikon-ikon itu dirender sebagai `<svg>` kosong saat SSR dan
+baru muncul setelah hidrasi.
+
+Kalau menambah peta ikon baru di berkas `.ts` di luar `app/`, tambahkan
+polanya ke `globInclude` dan pastikan `npx nuxt build` tidak memunculkan
+peringatan `[Icon] failed to load icon`.
 
 * Ilustrasi produk **digenerate**, bukan foto stok. Alasannya: setiap gambar
   cocok dengan deskripsi produknya sendiri (jumlah lapisan, warna, topping),
@@ -242,7 +271,11 @@ Saat integrasi nyata dipasang, hapus notice-nya **dan** perbarui:
 - [ ] Halaman compliance masih menggambarkan kondisi sistem yang sebenarnya.
 - [ ] `shared/config/site.ts` tidak berisi data karangan.
 - [ ] Tidak ada klaim baru yang tidak bisa dibuktikan.
-- [ ] `npx nuxt build` lolos (termasuk prerender).
+- [ ] `npx nuxt build` lolos (termasuk prerender) **tanpa** peringatan
+      `[Icon] failed to load icon`.
+- [ ] Setiap halaman punya tepat satu `<h1>` di HTML hasil SSR.
+- [ ] Halaman dicek di peramban sungguhan, bukan hanya lewat `curl` — kesalahan
+      saat inisialisasi plugin hanya terlihat setelah hidrasi.
 - [ ] CLAUDE.md ini diperbarui bila ada aturan/fitur baru.
 - [ ] TODO.md diperbarui untuk pekerjaan lanjutan.
 - [ ] Commit + push dengan author yang benar.
