@@ -31,7 +31,7 @@ useSchemaOrg([
   defineOrganization({
     'name': SITE.name,
     'url': siteUrl,
-    'logo': `${siteUrl}/brand/logo-mark.svg`,
+    'logo': `${siteUrl}/icon-512.png`,
     'description': t('site.shortDescription'),
     'email': email ?? undefined,
     'founder': confirmed(SITE.owner) ?? undefined,

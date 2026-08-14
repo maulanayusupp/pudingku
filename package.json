@@ -17,12 +17,12 @@
     "lint:fix": "eslint . --fix",
     "art:products": "node scripts/generate-product-art.mjs",
     "art:favicon": "node scripts/generate-favicons.mjs",
-    "art:all": "npm run art:products && npm run art:favicon"
+    "art:og": "node scripts/generate-og-images.mjs",
+    "art:all": "npm run art:products && npm run art:favicon && npm run art:og"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/icon": "^2.5.0",
-    "@nuxt/image": "^2.1.0",
     "@nuxtjs/i18n": "^10.6.0",
     "@nuxtjs/robots": "^6.1.4",
     "@nuxtjs/sitemap": "^8.3.4",

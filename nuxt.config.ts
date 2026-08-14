@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url'
  *   `runtimeConfig.public` so no deploy needs a rebuild to change it.
  */
 
-const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'https://pudingku.id'
+const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'https://pudingku-hazel.vercel.app'
 const SITE_NAME = 'Pudingku'
 
 export default defineNuxtConfig({
@@ -26,7 +26,6 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/i18n',
-    '@nuxt/image',
     '@nuxt/icon',
     '@nuxt/fonts',
     '@pinia/nuxt',
@@ -120,21 +119,13 @@ export default defineNuxtConfig({
   },
 
   // ── Assets ─────────────────────────────────────────────────────────────────
-  image: {
-    // Product art ships as SVG, which needs no transformation pipeline; the
-    // module is kept for raster art (OG images, future photography).
-    quality: 78,
-    format: ['webp', 'jpeg'],
-    screens: {
-      xs: 360,
-      sm: 576,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-      xxl: 1536,
-    },
-  },
-
+  // `@nuxt/image` is deliberately NOT installed. All product art is SVG and all
+  // share cards are pre-rendered at build time by `npm run art:og`, so nothing
+  // needs a runtime transformation pipeline. The module pulled sharp + ipx into
+  // the server bundle — 18.5 MB of a 29 MB output — for a feature with zero
+  // consumers, which only slowed cold starts on Vercel.
+  // Re-add it (and swap `<ProductImage>` back to `<NuxtImg>`) when real
+  // photography replaces the illustrations. See TODO.md → "Katalog & konten".
   icon: {
     mode: 'svg',
     class: 'pk-icon',
@@ -178,7 +169,19 @@ export default defineNuxtConfig({
   },
 
   robots: {
-    disallow: ['/checkout', '/checkout/*', '/keranjang', '/cart'],
+    // `autoI18n` is disabled and every localized path is listed by hand.
+    // Left on, the module rewrote the list into `/en/cart` twice while dropping
+    // the Indonesian `/keranjang` and `/checkout` entirely — the exact routes
+    // that most needed excluding.
+    autoI18n: false,
+    disallow: [
+      '/keranjang',
+      '/checkout',
+      '/checkout/',
+      '/en/cart',
+      '/en/checkout',
+      '/en/checkout/',
+    ],
   },
 
   schemaOrg: {
@@ -186,7 +189,9 @@ export default defineNuxtConfig({
       type: 'Organization',
       name: SITE_NAME,
       url: SITE_URL,
-      logo: `${SITE_URL}/brand/logo-mark.svg`,
+      // Raster, not the SVG mark: Google's structured-data logo field and
+      // social crawlers both want a bitmap.
+      logo: `${SITE_URL}/icon-512.png`,
     },
   },
 

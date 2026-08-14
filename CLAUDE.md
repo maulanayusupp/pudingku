@@ -220,8 +220,35 @@ Saat integrasi nyata dipasang, hapus notice-nya **dan** perbarui:
 | Perintah | Hasil |
 | --- | --- |
 | `npm run art:products` | 16 SVG di `public/images/products/` |
-| `npm run art:favicon` | favicon.ico/svg, apple-touch-icon, ikon PWA, `site.webmanifest`, OG image |
-| `npm run art:all` | keduanya |
+| `npm run art:favicon` | favicon.ico/svg, apple-touch-icon, ikon PWA, `site.webmanifest` |
+| `npm run art:og` | 34 kartu Open Graph (brand + 16 produk × 2 bahasa) |
+| `npm run art:all` | ketiganya |
+
+### Open Graph / preview WhatsApp & Facebook
+
+Aturan yang tidak boleh dilanggar: **`og:image` tidak pernah boleh menunjuk ke
+file SVG.** WhatsApp, Facebook, dan Instagram tidak bisa merender SVG, sehingga
+tautan yang dibagikan tampil tanpa gambar sama sekali.
+
+* Semua kartu dibuat lebih dulu oleh `npm run art:og` menjadi JPEG 1200×630 di
+  `public/og/`, satu per produk per bahasa.
+* Script gagal (`exit 1`) kalau ada kartu di atas 300 KB — WhatsApp diam-diam
+  melewati gambar yang lebih besar dari itu.
+* `useSeoPage()` selalu memancarkan blok gambar lengkap: `og:image`,
+  `og:image:secure_url`, `og:image:width`, `og:image:height`, `og:image:type`,
+  dan `og:image:alt`. Tanpa dimensi, WhatsApp sering menampilkan kartu
+  teks-saja.
+* Menambah produk baru berarti menjalankan `npm run art:og` lagi dan
+  meng-commit hasilnya — gambar adalah artefak build yang ikut masuk repo.
+
+### Domain
+
+`NUXT_PUBLIC_SITE_URL` menentukan canonical, hreflang, sitemap, robots, dan URL
+absolut semua kartu OG. Default build sekarang
+`https://pudingku-hazel.vercel.app` dan tertulis di **tiga** tempat yang harus
+diubah bersamaan saat pindah domain: `nuxt.config.ts`, `shared/config/site.ts`,
+dan `.env.example`. Setelah pindah, muat ulang cache preview Facebook lewat
+Sharing Debugger.
 
 ### Ikon
 

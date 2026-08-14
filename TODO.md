@@ -20,7 +20,7 @@ sehingga **tidak dirender** sampai diisi. Jangan mengarang nilainya.
 - [ ] Nomor sertifikat halal — **jangan dicantumkan sebelum dokumennya ada**
 - [ ] Nomor izin edar pangan olahan (P-IRT / BPOM)
 - [ ] Domain produksi → set `NUXT_PUBLIC_SITE_URL` (default sekarang
-      `https://pudingku.id`, belum dikonfirmasi)
+      `https://pudingku-hazel.vercel.app`)
 
 Setelah diisi: flip `verified: true`, lalu perbarui halaman
 `/kepatuhan/allergens`, `/kepatuhan/shipping`, dan bagian
@@ -57,8 +57,10 @@ Setelah diisi: flip `verified: true`, lalu perbarui halaman
 ## 2. Katalog & konten
 
 - [ ] Foto produk asli. Ilustrasi SVG sekarang sudah unik per produk dan tidak
-      menyesatkan, tapi foto nyata akan lebih meyakinkan. Simpan sebagai raster
-      dan pakai `<NuxtImg>` (bukan `<ProductImage>`) supaya masuk pipeline IPX.
+      menyesatkan, tapi foto nyata akan lebih meyakinkan. Kalau dipasang:
+      `npm i @nuxt/image`, daftarkan lagi di `nuxt.config` → `modules`, lalu
+      ganti `<ProductImage>` menjadi `<NuxtImg>`. Modul itu dilepas karena
+      membawa sharp + ipx (18,5 MB) tanpa ada yang memakainya.
 - [ ] Varian ukuran per produk (mis. cup 180 ml vs 350 ml, loyang 18 vs 22 cm).
 - [ ] Paket hampers / bundling untuk hadiah.
 - [ ] Menu musiman (Ramadan, Natal, Imlek) dengan tanggal aktif.
@@ -98,6 +100,10 @@ Setelah diisi: flip `verified: true`, lalu perbarui halaman
 ## 5. SEO & analitik
 
 - [ ] Verifikasi Google Search Console setelah domain final.
+- [ ] Kalau nanti pindah ke domain kustom, ubah `NUXT_PUBLIC_SITE_URL`,
+      `nuxt.config.ts`, dan `shared/config/site.ts`, lalu paksa Facebook
+      memuat ulang cache preview lewat Sharing Debugger — crawler menyimpan
+      URL absolut yang pertama kali dilihatnya.
 - [ ] `LocalBusiness` schema — butuh alamat & jam operasional yang terverifikasi
       lebih dulu (lihat bagian 0).
 - [ ] OG image per produk (butuh `@nuxtjs/og-image` atau render manual).

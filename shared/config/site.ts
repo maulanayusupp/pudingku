@@ -23,8 +23,13 @@ export const SITE = {
   name: 'Pudingku',
   /** Short legal/entity label used in compliance copy. */
   legalName: 'Pudingku',
-  /** Domain is configurable via NUXT_PUBLIC_SITE_URL; this is the build-time default. */
-  defaultUrl: 'https://pudingku.id',
+  /**
+   * Domain is configurable via NUXT_PUBLIC_SITE_URL; this is the build-time
+   * default and points at the current Vercel deployment. Change it here AND in
+   * `nuxt.config.ts` when a custom domain is connected — social crawlers cache
+   * the absolute URLs they first see.
+   */
+  defaultUrl: 'https://pudingku-hazel.vercel.app',
   defaultLocale: 'id',
 
   /** Confirmed by the owner. */

@@ -46,7 +46,6 @@ const faqTeasers = computed(() =>
 useSeoPage(() => ({
   title: t('site.tagline'),
   description: t('site.shortDescription'),
-  image: '/og/pudingku-og.png',
 }))
 </script>
 

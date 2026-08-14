@@ -58,12 +58,17 @@ const details = computed(() => [
 
 const siteUrl = String(config.public.siteUrl).replace(/\/$/, '')
 const productUrl = computed<string>(() => `${siteUrl}${localePath(`/produk/${product.value.slug}`)}`)
-const productImageUrl = computed<string>(() => `${siteUrl}${product.value.image}`)
+const productImageUrl = computed<string>(
+  () => `${siteUrl}/og/products/${product.value.slug}.${locale.value}.jpg`,
+)
 
 useSeoPage(() => ({
   title: `${product.value.name} — ${t(`categories.${product.value.category}`)}`,
   description: product.value.tagline,
-  image: product.value.image,
+  // A pre-rendered JPEG share card, NOT `product.image`: that is an SVG, and no
+  // social crawler can render one. Cards live in `public/og/products/` and are
+  // built by `npm run art:og`.
+  image: `/og/products/${product.value.slug}.${locale.value}.jpg`,
   type: 'product',
 }))
 
