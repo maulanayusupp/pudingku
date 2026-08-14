@@ -36,8 +36,12 @@ export function useForm<TValues extends Record<string, string>, TResult>(
   /** Non-field error, e.g. a 500 — rendered above the submit button. */
   const formError = ref<string | null>(null)
   const result = ref<TResult | null>(null)
-  /** Fields the user has left, so errors do not appear while typing. */
-  const touched = ref(new Set<keyof TValues>())
+  /**
+   * Fields the user has left, so errors do not appear while typing.
+   * `shallowRef` keeps the `Set<keyof TValues>` generic intact — `ref()` would
+   * unwrap it to `Set<string | number | symbol>`.
+   */
+  const touched = shallowRef(new Set<keyof TValues>())
 
   const isSubmitting = computed(() => status.value === 'submitting')
 
@@ -53,7 +57,7 @@ export function useForm<TValues extends Record<string, string>, TResult>(
       return
     }
 
-    const scoped = validate(values, { [field]: rules } as Schema<TValues>)
+    const scoped = validate(values, { [field]: rules } as unknown as Schema<TValues>)
     if (scoped[field]) {
       errors.value = { ...errors.value, [field]: scoped[field] }
     } else {
@@ -69,7 +73,7 @@ export function useForm<TValues extends Record<string, string>, TResult>(
   function reset(): void {
     Object.assign(values, options.initial)
     errors.value = {}
-    touched.value = new Set()
+    touched.value = new Set<keyof TValues>()
     formError.value = null
     status.value = 'idle'
   }

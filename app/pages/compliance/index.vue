@@ -47,7 +47,7 @@ useSeoPage(() => ({
         :eyebrow="t('compliance.eyebrow')"
         :title="t('compliance.title')"
         :description="t('compliance.description')"
-        level="2"
+        :level="2"
       />
 
       <p class="pk-compliance__updated">

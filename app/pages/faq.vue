@@ -48,7 +48,7 @@ useSchemaOrg([
         :eyebrow="t('faq.eyebrow')"
         :title="t('faq.title')"
         :description="t('faq.description')"
-        level="2"
+        :level="2"
       />
 
       <div v-reveal class="pk-faq__list pk-stagger">

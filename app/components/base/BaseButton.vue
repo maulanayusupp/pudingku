@@ -31,23 +31,31 @@ const props = withDefaults(defineProps<Props>(), {
   type: 'button',
 })
 
-const isExternal = computed(() => Boolean(props.href))
-const isLink = computed(() => Boolean(props.to) || isExternal.value)
+const isInert = computed(() => props.disabled || props.loading)
 
+/**
+ * A disabled link is a trap: it still navigates on click and on Enter. So when
+ * `disabled` is set we render a real `<button disabled>` instead, whatever the
+ * `to`/`href` props say.
+ */
 const component = computed(() => {
+  if (isInert.value) return 'button'
   if (props.href) return 'a'
   if (props.to) return resolveComponent('NuxtLink')
   return 'button'
 })
 
 const bindings = computed(() => {
+  if (isInert.value) {
+    return { type: props.type, disabled: true }
+  }
   if (props.href) {
     return { href: props.href, target: '_blank', rel: 'noopener noreferrer' }
   }
   if (props.to) {
     return { to: props.to }
   }
-  return { type: props.type, disabled: props.disabled || props.loading }
+  return { type: props.type, disabled: false }
 })
 </script>
 
@@ -58,7 +66,7 @@ const bindings = computed(() => {
     :class="[
       `pk-button--${variant}`,
       `pk-button--${size}`,
-      { 'is-block': block, 'is-loading': loading, 'is-disabled': disabled && !isLink },
+      { 'is-block': block, 'is-loading': loading, 'is-disabled': disabled },
     ]"
     :aria-busy="loading ? 'true' : undefined"
     v-bind="bindings"

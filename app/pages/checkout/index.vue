@@ -133,7 +133,7 @@ useSeoPage(() => ({
         :eyebrow="t('checkout.eyebrow')"
         :title="t('checkout.title')"
         :description="t('checkout.description')"
-        level="2"
+        :level="2"
       />
 
       <ClientOnly>
@@ -587,11 +587,13 @@ useSeoPage(() => ({
   }
 }
 
-.pk-checkout__grandTotal {
+// Scoped under the parent so it beats `.pk-checkout__totals > div` on
+// specificity rather than with `!important`.
+.pk-checkout__totals > .pk-checkout__grandTotal {
   padding-block-start: var(--pk-space-3);
   border-block-start: 1px dashed var(--pk-border);
-  color: var(--pk-plum-800) !important;
-  font-size: rem(16px) !important;
+  color: var(--pk-plum-800);
+  font-size: rem(16px);
   font-weight: 700;
 
   dd {

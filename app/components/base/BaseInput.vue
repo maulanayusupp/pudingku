@@ -20,11 +20,16 @@ interface Props {
 
 withDefaults(defineProps<Props>(), { type: 'text' })
 
+// The wrapper exists only to position the icon. Attributes and listeners the
+// caller passes (`@blur`, `aria-label`, …) belong on the control itself, so
+// they are forwarded explicitly rather than landing on both elements.
+defineOptions({ inheritAttrs: false })
+
 const model = defineModel<string>({ default: '' })
 </script>
 
 <template>
-  <div class="pk-input" :class="{ 'has-icon': Boolean(icon), 'is-invalid': invalid }">
+  <div class="pk-input" :class="[$attrs.class, { 'has-icon': Boolean(icon), 'is-invalid': invalid }]">
     <Icon v-if="icon" :name="icon" class="pk-input__icon" aria-hidden="true" />
     <input
       :id="id"
@@ -39,7 +44,7 @@ const model = defineModel<string>({ default: '' })
       :min="min"
       :max="max"
       :disabled="disabled"
-      v-bind="$attrs"
+      v-bind="{ ...$attrs, class: undefined }"
     >
   </div>
 </template>

@@ -51,7 +51,7 @@ onKeyStroke('Escape', () => {
             <h2 class="pk-drawer__title">
               {{ t('cart.drawerTitle') }}
               <span v-if="!cart.isEmpty" class="pk-drawer__count">
-                {{ t('cart.itemCount', cart.itemCount, { count: cart.itemCount }) }}
+                {{ t('cart.itemCount', { count: cart.itemCount }, cart.itemCount) }}
               </span>
             </h2>
 

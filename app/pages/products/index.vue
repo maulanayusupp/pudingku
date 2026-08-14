@@ -77,7 +77,7 @@ useSeoPage(() => ({
           :eyebrow="t('products.eyebrow')"
           :title="t('products.title')"
           :description="t('products.description')"
-          level="2"
+          :level="2"
         />
       </div>
     </header>
@@ -86,7 +86,7 @@ useSeoPage(() => ({
       <ProductFilters v-model="filters" class="pk-shop__filters" />
 
       <p class="pk-shop__count" role="status">
-        <span v-if="!pending">{{ t('products.resultCount', items.length, { count: items.length }) }}</span>
+        <span v-if="!pending">{{ t('products.resultCount', { count: items.length }, items.length) }}</span>
         <span v-else>{{ t('products.loadingLabel') }}</span>
       </p>
 

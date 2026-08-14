@@ -186,8 +186,6 @@ const address = confirmed(SITE.addressStreet)
 }
 
 .pk-footer__mark {
-  --pk-plum-800: var(--pk-cream-100);
-
   color: var(--pk-cream-100);
 }
 

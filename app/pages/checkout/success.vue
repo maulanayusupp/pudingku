@@ -251,8 +251,8 @@ useSeoPage(() => ({
   }
 }
 
-.pk-success__grand {
-  color: var(--pk-plum-800) !important;
+.pk-success__totals > .pk-success__grand {
+  color: var(--pk-plum-800);
   font-weight: 700;
 
   dd {

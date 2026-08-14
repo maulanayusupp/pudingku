@@ -46,7 +46,7 @@ useSeoPage(() => ({
         <div v-if="!cart.isEmpty" class="pk-cartPage__grid">
           <section class="pk-cartPage__lines" :aria-label="t('cart.title')">
             <p class="pk-cartPage__count">
-              {{ t('cart.itemCount', cart.itemCount, { count: cart.itemCount }) }}
+              {{ t('cart.itemCount', { count: cart.itemCount }, cart.itemCount) }}
             </p>
 
             <ul>

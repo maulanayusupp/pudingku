@@ -40,8 +40,8 @@ const quantity = ref(1)
 const leadTime = computed(() => {
   const { unit, count } = leadTimeParts(product.value.leadTimeHours)
   return unit === 'hour'
-    ? t('units.leadTimeHours', count, { count })
-    : t('units.leadTimeDays', count, { count })
+    ? t('units.leadTimeHours', { count }, count)
+    : t('units.leadTimeDays', { count }, count)
 })
 
 const addToCart = () => {
@@ -51,12 +51,14 @@ const addToCart = () => {
 
 const details = computed(() => [
   { label: t('product.unit'), value: product.value.unit },
-  { label: t('product.servings'), value: t('units.servingsCount', product.value.servings, { count: product.value.servings }) },
+  { label: t('product.servings'), value: t('units.servingsCount', { count: product.value.servings }, product.value.servings) },
   { label: t('product.netWeight'), value: weight(product.value.netWeightGram) },
   { label: t('product.leadTime'), value: leadTime.value },
 ])
 
 const siteUrl = String(config.public.siteUrl).replace(/\/$/, '')
+const productUrl = computed<string>(() => `${siteUrl}${localePath(`/produk/${product.value.slug}`)}`)
+const productImageUrl = computed<string>(() => `${siteUrl}${product.value.image}`)
 
 useSeoPage(() => ({
   title: `${product.value.name} — ${t(`categories.${product.value.category}`)}`,
@@ -69,7 +71,7 @@ useSchemaOrg([
   defineProduct({
     name: () => product.value.name,
     description: () => product.value.description,
-    image: () => `${siteUrl}${product.value.image}`,
+    image: () => productImageUrl.value,
     sku: () => product.value.id,
     category: () => t(`categories.${product.value.category}`),
     offers: [{
@@ -80,7 +82,7 @@ useSchemaOrg([
       availability: () => (product.value.available
         ? 'https://schema.org/PreOrder'
         : 'https://schema.org/OutOfStock'),
-      url: () => `${siteUrl}${localePath(`/produk/${product.value.slug}`)}`,
+      url: () => productUrl.value,
     }],
   }),
 ])
