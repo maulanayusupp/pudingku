@@ -1,0 +1,12 @@
+// =============================================================================
+// Global stylesheet — the ONLY file registered in nuxt.config `css`.
+// Order matters: tokens first, then reset, then type, then motion, then utils.
+// Components never import this file; they import `abstracts` instead.
+// =============================================================================
+
+@use 'tokens';
+@use 'reset';
+@use 'typography';
+@use 'animations';
+@use 'utilities';
+@use 'vendor/nprogress';

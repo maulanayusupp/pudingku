@@ -1,0 +1,66 @@
+// =============================================================================
+// Breakpoints + responsive mixins.
+// Mobile-first: `up()` is the default direction, `down()` exists for the rare
+// override that only makes sense on small screens.
+// =============================================================================
+
+@use 'sass:map';
+
+$breakpoints: (
+  'xs': 22.5em,  // 360px
+  'sm': 36em,    // 576px
+  'md': 48em,    // 768px
+  'lg': 64em,    // 1024px
+  'xl': 80em,    // 1280px
+  'xxl': 96em,   // 1536px
+);
+
+@function bp($name) {
+  @if not map.has-key($breakpoints, $name) {
+    @error 'Unknown breakpoint `#{$name}`. Available: #{map.keys($breakpoints)}.';
+  }
+
+  @return map.get($breakpoints, $name);
+}
+
+/// Min-width query. `@include up('md') { ... }`
+@mixin up($name) {
+  @media (min-width: bp($name)) {
+    @content;
+  }
+}
+
+/// Max-width query, offset so it never overlaps the matching `up()`.
+@mixin down($name) {
+  @media (max-width: (bp($name) - 0.0625em)) {
+    @content;
+  }
+}
+
+/// Range between two breakpoints, inclusive of the lower bound.
+@mixin between($from, $to) {
+  @media (min-width: bp($from)) and (max-width: (bp($to) - 0.0625em)) {
+    @content;
+  }
+}
+
+/// Pointer-based query — hover effects should not fire on touch devices.
+@mixin hover-capable {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+/// Content that must be dropped when the visitor asks for less motion.
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
+/// Content that only applies when motion is welcome.
+@mixin motion-safe {
+  @media (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}

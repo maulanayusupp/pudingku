@@ -1,0 +1,825 @@
+{
+  "site": {
+    "name": "Pudingku",
+    "tagline": "Hand-made puddings & cakes, in small batches.",
+    "shortDescription": "Ten pudding variants and six cakes, made in small batches every day."
+  },
+
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "allProducts": "All products",
+    "pudding": "Pudding",
+    "cake": "Cakes",
+    "about": "About",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "compliance": "Compliance",
+    "cart": "Cart",
+    "checkout": "Checkout",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to main content"
+  },
+
+  "common": {
+    "order": "Order",
+    "orderNow": "Order now",
+    "addToCart": "Add to cart",
+    "added": "Added",
+    "viewDetail": "View details",
+    "seeAll": "See all",
+    "seeAllProducts": "See all products",
+    "back": "Back",
+    "backToShop": "Back to catalog",
+    "continueShopping": "Continue shopping",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "send": "Send",
+    "sending": "Sending…",
+    "submit": "Submit",
+    "loading": "Loading…",
+    "search": "Search",
+    "searchPlaceholder": "Search puddings, cakes or ingredients…",
+    "clear": "Clear",
+    "reset": "Reset",
+    "filter": "Filter",
+    "sort": "Sort",
+    "quantity": "Quantity",
+    "increase": "Increase quantity",
+    "decrease": "Decrease quantity",
+    "remove": "Remove",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "free": "Free",
+    "from": "From",
+    "optional": "optional",
+    "required": "required",
+    "readMore": "Read more",
+    "copied": "Copied",
+    "copy": "Copy",
+    "email": "Email",
+    "phone": "Phone",
+    "name": "Name",
+    "or": "or",
+    "and": "and",
+    "yes": "Yes",
+    "no": "No",
+    "language": "Language",
+    "changeLanguage": "Change language",
+    "updatedOn": "Updated {date}",
+    "scrollForMore": "Scroll for more"
+  },
+
+  "units": {
+    "servingsCount": "{count} serving | {count} servings",
+    "itemCount": "{count} item | {count} items",
+    "leadTimeHours": "Ready in {count} hour | Ready in {count} hours",
+    "leadTimeDays": "Ready in {count} day | Ready in {count} days",
+    "perItem": "per item"
+  },
+
+  "categories": {
+    "all": "All",
+    "pudding": "Pudding",
+    "cake": "Cakes",
+    "puddingDescription": "Ten variants in 180 ml cups, served cold.",
+    "cakeDescription": "Six whole cakes to share, from lapis legit to opera.",
+    "itemsAvailable": "{count} variants",
+    "priceRange": "{min} – {max}"
+  },
+
+  "sort": {
+    "label": "Sort by",
+    "featured": "Our picks",
+    "priceAsc": "Lowest price",
+    "priceDesc": "Highest price",
+    "nameAsc": "Name A–Z"
+  },
+
+  "badges": {
+    "signature": "Signature",
+    "new": "New",
+    "bestseller-internal": "Most ordered",
+    "seasonal": "Seasonal",
+    "egg-free": "Egg-free",
+    "gluten-free": "Gluten-free"
+  },
+
+  "allergens": {
+    "title": "Allergen information",
+    "contains": "Contains",
+    "none": "None of the allergens we track",
+    "dairy": "Dairy",
+    "egg": "Egg",
+    "gluten": "Gluten",
+    "nut": "Tree nuts",
+    "soy": "Soy",
+    "coconut": "Coconut",
+    "sesame": "Sesame",
+    "crossContactNotice": "Our kitchen handles dairy, egg, gluten, nuts, soy, coconut and sesame in the same space. We cannot guarantee the absence of cross-contact."
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "Small kitchen, made daily",
+      "title": "Pudding that trembles when your spoon lands",
+      "subtitle": "Ten pudding variants and six cakes. We work in small batches, so what reaches you was made for that day — not pulled from stock.",
+      "ctaPrimary": "See the 10 puddings",
+      "ctaSecondary": "Get to know us",
+      "statVariants": "pudding variants",
+      "statCakes": "whole cakes",
+      "statBatch": "small batches daily"
+    },
+    "marquee": {
+      "items": [
+        "Made in small batches",
+        "Ingredients bought daily",
+        "No artificial flavouring in the fruit variants",
+        "Packed cold",
+        "Recipes developed in-house"
+      ]
+    },
+    "signature": {
+      "eyebrow": "Ten signatures",
+      "title": "One shelf, ten flavours",
+      "description": "Swipe to see them all. Every variant has a different texture — from the lightest to the densest.",
+      "cta": "See every variant"
+    },
+    "categories": {
+      "eyebrow": "Two lines",
+      "title": "Pudding for one, cake for the table",
+      "description": "Puddings come in ready-to-eat 180 ml cups. Cakes come whole, for the moments that call for slicing something together."
+    },
+    "process": {
+      "eyebrow": "How we work",
+      "title": "Four steps, no shortcuts",
+      "steps": [
+        {
+          "title": "Morning shopping",
+          "body": "Fruit, milk and eggs are bought the same day we bake. If the fruit is not good enough, that variant waits."
+        },
+        {
+          "title": "Cook by batch",
+          "body": "Each batch is a limited count. We do not scale the recipe up, so heat and texture stay under control."
+        },
+        {
+          "title": "Chill slowly",
+          "body": "Puddings are cooled in stages rather than dropped straight to the lowest temperature, so the surface never weeps."
+        },
+        {
+          "title": "Pack cold",
+          "body": "Packed with ice packs and stamped with the time it left the kitchen, so you know how long the condition holds."
+        }
+      ]
+    },
+    "promise": {
+      "eyebrow": "What we promise",
+      "title": "Only what we can actually deliver",
+      "description": "We deliberately avoid claims we cannot back up. Here is what is genuinely within our control.",
+      "items": [
+        {
+          "title": "Production date printed",
+          "body": "Every package carries the date and time it was made, so you never have to guess."
+        },
+        {
+          "title": "Open ingredient list",
+          "body": "Every ingredient of every variant is listed on its product page, including the ones that can trigger allergies."
+        },
+        {
+          "title": "Wrong order, we replace it",
+          "body": "If what arrives differs from the order or is damaged on arrival, report it the same day and we replace it."
+        },
+        {
+          "title": "No leftover stock",
+          "body": "We produce against the orders that came in, so nothing is carried over and sold the next day."
+        }
+      ]
+    },
+    "faqTeaser": {
+      "eyebrow": "Frequently asked",
+      "title": "Before you order",
+      "cta": "See all questions"
+    },
+    "cta": {
+      "eyebrow": "Ready to order?",
+      "title": "Pick the flavour, we handle the rest",
+      "description": "Order at least one day ahead for puddings, two days for lapis legit and cheesecake.",
+      "primary": "Start ordering",
+      "secondary": "Ask us first"
+    }
+  },
+
+  "products": {
+    "meta": {
+      "title": "Pudding & cake catalog",
+      "description": "Ten pudding variants in 180 ml cups and six whole cakes, each with its full ingredient list, allergen information and storage guidance."
+    },
+    "eyebrow": "Catalog",
+    "title": "Everything we make",
+    "description": "Sixteen items, all made in small batches. Filter by product line or search straight by ingredient.",
+    "resultCount": "{count} product found | {count} products found",
+    "emptyTitle": "Nothing matches",
+    "emptyBody": "Try a different keyword, or clear the filters.",
+    "filterByCategory": "Filter by line",
+    "loadingLabel": "Loading catalog"
+  },
+
+  "product": {
+    "backToCatalog": "Back to catalog",
+    "highlights": "What sets it apart",
+    "ingredients": "Ingredients",
+    "storage": "Storage",
+    "allergenInfo": "Allergens",
+    "details": "Product details",
+    "unit": "Format",
+    "servings": "Servings",
+    "netWeight": "Net weight",
+    "leadTime": "Preparation time",
+    "related": "You might also like",
+    "unavailable": "Currently unavailable",
+    "unavailableBody": "We are not making this variant at the moment. Check back later or get in touch.",
+    "addedToCart": "{name} added to cart",
+    "quantityLabel": "Quantity to order",
+    "shareLabel": "Share this product",
+    "priceNote": "Price includes packaging. Delivery is calculated at checkout.",
+    "notFoundTitle": "Product not found",
+    "notFoundBody": "The address you opened does not match any product."
+  },
+
+  "cart": {
+    "meta": {
+      "title": "Cart",
+      "description": "Review your order before continuing."
+    },
+    "title": "Cart",
+    "drawerTitle": "Your cart",
+    "empty": "Your cart is empty",
+    "emptyBody": "Nothing picked yet. Start with our ten pudding variants.",
+    "emptyCta": "Browse the catalog",
+    "itemCount": "{count} item in cart | {count} items in cart",
+    "removeItem": "Remove {name} from cart",
+    "summary": "Summary",
+    "subtotal": "Subtotal",
+    "deliveryFee": "Delivery",
+    "deliveryFeeNote": "Estimate for in-city delivery. Confirmed at checkout.",
+    "estimatedTotal": "Estimated total",
+    "freeDeliveryProgress": "Add {amount} more for free in-city delivery",
+    "freeDeliveryReached": "Free in-city delivery unlocked",
+    "checkout": "Continue to checkout",
+    "clearCart": "Empty the cart",
+    "clearConfirm": "Empty the whole cart?",
+    "openCart": "Open cart, {count} items",
+    "maxQuantityNote": "Maximum {max} per variant in one order."
+  },
+
+  "checkout": {
+    "meta": {
+      "title": "Checkout",
+      "description": "Fill in your order details."
+    },
+    "eyebrow": "Last step",
+    "title": "Order details",
+    "description": "We need these details to prepare and deliver your order.",
+    "demoNoticeTitle": "This is a demo flow",
+    "demoNoticeBody": "No payment system is connected to this website yet. Pressing the button below only calculates the total and creates a reference number — nothing is charged, no order is stored, and no notification is sent. For a real order, email {email}.",
+    "sectionContact": "Contact",
+    "sectionFulfilment": "Pickup or delivery",
+    "sectionSchedule": "Schedule",
+    "sectionNote": "Notes",
+    "fields": {
+      "name": "Full name",
+      "namePlaceholder": "Name to put on the order",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "phone": "Phone number",
+      "phonePlaceholder": "08xxxxxxxxxx",
+      "method": "Method",
+      "pickup": "Pick up myself",
+      "pickupHint": "The pickup address is emailed once the order is confirmed.",
+      "delivery": "Deliver to me",
+      "deliveryHint": "For now we only deliver within the city.",
+      "address": "Full address",
+      "addressPlaceholder": "Street, number, landmark",
+      "city": "City",
+      "cityPlaceholder": "Destination city",
+      "postalCode": "Postal code",
+      "preferredDate": "Preferred date",
+      "preferredDateHint": "Puddings need at least 1 day, some cakes 2–3 days.",
+      "note": "Additional notes",
+      "notePlaceholder": "For example: no nut topping, or a preferred delivery window"
+    },
+    "submit": "Create order summary",
+    "submitting": "Calculating…",
+    "orderSummary": "Order summary",
+    "success": {
+      "title": "Order summary created",
+      "reference": "Reference number",
+      "body": "Keep this number. Because no payment system is connected yet, the next step is emailing this reference to {email} so your order actually enters the queue.",
+      "emailCta": "Email the reference",
+      "backHome": "Back to home",
+      "createdAt": "Created at",
+      "noOrderTitle": "No order yet",
+      "noOrderBody": "There is no order summary in this session.",
+      "emailSubject": "Order {reference}",
+      "emailBody": "Hello Pudingku, I would like to proceed with the order under reference {reference}."
+    }
+  },
+
+  "about": {
+    "meta": {
+      "title": "About us",
+      "description": "Pudingku is a small kitchen making puddings and cakes in small batches every day."
+    },
+    "eyebrow": "About",
+    "title": "A small kitchen that chose to stay small",
+    "lead": "Pudingku started from something simple: good pudding usually loses because too much of it is made at once. We went the other way.",
+    "story": {
+      "heading": "Why small batches",
+      "paragraphs": [
+        "Pudding is honest. Let the milk-to-agar ratio slip even slightly and you taste it immediately — either too firm, or weeping after a night in the fridge. That ratio is easiest to hold when the quantity being cooked stays modest.",
+        "So we cap the size of every batch and produce against the orders that come in rather than stacking up stock. The trade-off is plain: we need preparation time, and there are days when a variant simply is not available. We think that is a reasonable exchange.",
+        "The recipes are our own and still being adjusted. If a variant is not right yet, we do not sell it."
+      ]
+    },
+    "values": {
+      "heading": "Three things we hold to",
+      "items": [
+        {
+          "title": "Say it as it is",
+          "body": "Ingredients, allergens and how long a product keeps are written out on every product page. When something is not certain yet, we say it is not certain yet."
+        },
+        {
+          "title": "Taste first, looks after",
+          "body": "We do not add colouring to make anything look brighter. Our pandan is a soft green and our taro is a pale purple because that is what those ingredients actually look like."
+        },
+        {
+          "title": "Fix it when it goes wrong",
+          "body": "A wrong or damaged delivery gets replaced without an argument. The conditions are on the refund policy page."
+        }
+      ]
+    },
+    "transparency": {
+      "heading": "What we do not have yet",
+      "body": "We choose not to display claims we have no paperwork for. As of the last update to this page, we do not publish a halal certification number or a food distribution permit number on this website. If you need legal documentation for a bulk or corporate order, contact us first so we can explain exactly where things stand.",
+      "cta": "Read the compliance pages"
+    },
+    "contactCta": {
+      "heading": "Want to ask something?",
+      "body": "Questions about ingredients, scheduling or bulk orders are answered fastest by email.",
+      "cta": "Contact us"
+    }
+  },
+
+  "contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Get in touch with Pudingku about products, order scheduling or bulk orders."
+    },
+    "eyebrow": "Contact",
+    "title": "Tell us what you need",
+    "description": "For questions about ingredients, allergens, scheduling or bulk orders.",
+    "directTitle": "The fastest route",
+    "directBody": "Emailing us directly is the channel that definitely arrives. We usually reply within one working day.",
+    "formNoticeTitle": "About the form below",
+    "formNoticeBody": "This form checks your input and creates a reference number, but the website is not yet connected to an email service — so the message is not actually delivered. Until it is, please use the email address above.",
+    "formTitle": "Send a message",
+    "fields": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "For example: 50 cups for an office event",
+      "message": "Message",
+      "messagePlaceholder": "Write your question here"
+    },
+    "submit": "Send message",
+    "successTitle": "Your input passed validation",
+    "successBody": "Your reference is {reference}. Since email delivery is not live, please copy your message and send it to {email} so it actually reaches us.",
+    "sendAnother": "Write another message",
+    "infoOwner": "Person in charge",
+    "infoEmail": "Email",
+    "infoHours": "Response time",
+    "infoHoursValue": "Usually within one working day",
+    "infoLocation": "Location",
+    "infoLocationPending": "The kitchen address is not published on this website. Contact us for pickup details.",
+    "infoPhonePending": "A phone number is not publicly available yet."
+  },
+
+  "faq": {
+    "meta": {
+      "title": "FAQ",
+      "description": "The questions we get most often about ordering, storage, allergens and delivery."
+    },
+    "eyebrow": "FAQ",
+    "title": "What people ask most",
+    "description": "If your question is not here, email us — we will add it to this list.",
+    "items": [
+      {
+        "q": "How far ahead of my event should I order?",
+        "a": "Puddings need at least one day of preparation. Lapis legit, yuzu cheesecake, red velvet and opera need two to three days. For orders above 50 items, contact us first so we can check capacity."
+      },
+      {
+        "q": "How long do the products keep?",
+        "a": "Puddings with fresh fruit (mango, strawberry, durian) should be finished within two days. The other puddings keep three days. Lapis legit lasts longest: five days at room temperature or two weeks refrigerated. Each product page states its own guidance."
+      },
+      {
+        "q": "Can the pudding be frozen?",
+        "a": "We do not recommend it. Agar-based puddings break down in texture once thawed and release water."
+      },
+      {
+        "q": "Are there egg-free or gluten-free variants?",
+        "a": "Yes. Egg-free and gluten-free variants are marked in the catalog. That said, our kitchen handles egg and gluten in the same space, so we cannot guarantee the absence of cross-contact."
+      },
+      {
+        "q": "Can I customise the flavour or sweetness?",
+        "a": "For orders above 30 items we can reduce the sugar. For a flavour outside the catalog we need testing time — please ask first."
+      },
+      {
+        "q": "How is delivery handled?",
+        "a": "Packed with ice packs and sent by instant courier within the city. We do not yet ship between cities because the product has to stay cold."
+      },
+      {
+        "q": "What payment methods are available?",
+        "a": "This website is not connected to any payment system yet. For now, ordering and payment are arranged over email after you send us your order reference number."
+      },
+      {
+        "q": "What if my order is wrong or damaged?",
+        "a": "Report it the same day with a photo of the packaging. If the mistake is ours, we replace it or refund it. The details are on the refund policy page."
+      }
+    ],
+    "stillHaveQuestions": "Still have a question?",
+    "contactCta": "Send us your question"
+  },
+
+  "compliance": {
+    "meta": {
+      "title": "Compliance & policies",
+      "description": "Pudingku's privacy policy, terms of service, refunds, delivery, allergens and cookie information."
+    },
+    "eyebrow": "Compliance",
+    "title": "Policies & disclosure",
+    "description": "Everything that applies when you use this website and order from us, written as plainly as we can manage.",
+    "lastUpdated": "Last updated",
+    "updatedAt": "2026-08-14",
+    "readDocument": "Read",
+    "backToCompliance": "Back to compliance",
+    "statusTitle": "Status of this website",
+    "statusBody": "This website presents the full catalog and ordering flow, but it is not yet connected to a payment system or an order database. Every order summary and contact message is calculated and validated, then shown back to you — it is not stored and not sent anywhere. This page will be updated as soon as those integrations go live.",
+    "docs": {
+      "privacy": {
+        "title": "Privacy policy",
+        "summary": "What we ask for, why, and how long we keep it.",
+        "sections": [
+          {
+            "h": "In short",
+            "p": [
+              "We only ask for the data genuinely needed to prepare and deliver an order. We do not sell your data to anyone."
+            ]
+          },
+          {
+            "h": "Data we collect",
+            "p": ["When you fill in the order or contact form, we process:"],
+            "ul": [
+              "Name, email address and phone number.",
+              "Delivery address, city and postal code — only if you choose delivery.",
+              "Your preferred date and any note you write yourself."
+            ]
+          },
+          {
+            "h": "What is stored on your device",
+            "p": [
+              "The contents of your cart are kept in your browser's local storage so they survive a page reload. That data lives on your device, is never sent to our server, and can be cleared at any time from your browser settings.",
+              "Your language preference is stored in a single cookie named pk_locale so the site opens in the same language when you return."
+            ]
+          },
+          {
+            "h": "Current state",
+            "p": [
+              "In this version of the website, what you type into the forms is not written to a database of ours and is not passed to any third-party service. It is processed transiently on the server to compute totals and validate input, then discarded once the response is returned to your browser.",
+              "Once a real ordering system goes live, this section will be updated to describe where data is stored, for how long, and which third parties are involved."
+            ]
+          },
+          {
+            "h": "Third-party services",
+            "p": [
+              "This website loads web fonts from Google Fonts when a page opens, which means your IP address is visible to that provider. We run no analytics, no advertising pixels and no other third-party trackers."
+            ]
+          },
+          {
+            "h": "Your rights",
+            "p": [
+              "You may request a copy, correction or deletion of the data we hold about you, and may withdraw consent at any time. Send the request to the email address on the contact page and we will respond within a reasonable time."
+            ]
+          },
+          {
+            "h": "Children",
+            "p": [
+              "This website is not aimed at children under 13 and we do not knowingly collect their data."
+            ]
+          },
+          {
+            "h": "Changes to this policy",
+            "p": [
+              "If this policy changes, the date at the top of the page is updated. Material changes will also be noted on the compliance overview page."
+            ]
+          }
+        ]
+      },
+      "terms": {
+        "title": "Terms of service",
+        "summary": "The basis of the agreement when you order from us.",
+        "sections": [
+          {
+            "h": "About these terms",
+            "p": [
+              "By using this website and submitting an order you agree to the terms on this page. If any part does not work for you, please do not proceed with an order."
+            ]
+          },
+          {
+            "h": "Orders and acceptance",
+            "p": [
+              "An order summary generated by this website does not mean your order has been accepted. An order is accepted only once we reply and confirm the schedule and availability.",
+              "We may decline or cancel an order when ingredients are unavailable, production capacity is full, or the details provided are incomplete."
+            ]
+          },
+          {
+            "h": "Prices",
+            "p": [
+              "All prices are in Rupiah and include packaging. Delivery is charged separately. Prices may change if ingredient costs change; the price that applies is the one at the moment we confirm your order."
+            ]
+          },
+          {
+            "h": "Payment",
+            "p": [
+              "There is no automated payment system on this website. Payment is agreed over email once an order is confirmed. Never send card details or banking credentials through a form on this website."
+            ]
+          },
+          {
+            "h": "Your responsibilities",
+            "ul": [
+              "Provide an address and a contact number reachable on the delivery day.",
+              "Tell us about allergies or restrictions before the order goes into production.",
+              "Store the product according to the storage guidance immediately on receipt."
+            ]
+          },
+          {
+            "h": "Limitation of liability",
+            "p": [
+              "Our liability for any single order is limited to the value of that order. We are not liable for deterioration that occurs after delivery due to storage that does not follow the stated guidance."
+            ]
+          },
+          {
+            "h": "Intellectual property",
+            "p": [
+              "The name, copy, product illustrations and design of this website are ours. Please share the links, but do not reuse the material commercially without written permission."
+            ]
+          },
+          {
+            "h": "Governing law",
+            "p": [
+              "These terms are governed by the laws of the Republic of Indonesia."
+            ]
+          }
+        ]
+      },
+      "refund": {
+        "title": "Cancellations & refunds",
+        "summary": "When an order can be cancelled, and when we replace it.",
+        "sections": [
+          {
+            "h": "Why the rules are fairly strict",
+            "p": [
+              "Everything is made after an order comes in and cannot be resold. The cancellation window therefore follows when production starts."
+            ]
+          },
+          {
+            "h": "Cancellation",
+            "ul": [
+              "More than 24 hours before the pickup or delivery date: the order can be cancelled in full.",
+              "Less than 24 hours: production has usually started, so we cannot accept a cancellation.",
+              "A date change can be requested once, as long as it is more than 24 hours before the schedule."
+            ]
+          },
+          {
+            "h": "Replacement or refund",
+            "p": ["We replace the product or refund the payment when:"],
+            "ul": [
+              "What you received differs from what was ordered.",
+              "The product is damaged or has spilled on arrival.",
+              "The product is unfit to eat on arrival despite the cold chain being maintained."
+            ]
+          },
+          {
+            "h": "How to report it",
+            "p": [
+              "Report it the same day the order is received, with the reference number and a photo of the packaging and its contents. The sooner it is reported, the easier it is for us to trace where it went wrong."
+            ]
+          },
+          {
+            "h": "Not covered",
+            "ul": [
+              "A difference in taste preference — for example, finding it not sweet enough.",
+              "Product that spoiled because it was kept out of the fridge longer than the guidance allows.",
+              "A mistyped address that prevented the courier from finding the recipient."
+            ]
+          }
+        ]
+      },
+      "shipping": {
+        "title": "Delivery & pickup",
+        "summary": "Service area, how we pack, and preparation times.",
+        "sections": [
+          {
+            "h": "Preparation time",
+            "p": [
+              "Puddings need at least 24 hours. Durian needs 48 hours because the fruit is prepared ahead. Lapis legit needs 72 hours. Each product page states its own preparation time."
+            ]
+          },
+          {
+            "h": "Delivery area",
+            "p": [
+              "We currently deliver within the city only, by instant courier, because the product must stay cold the whole way. We do not yet offer intercity or standard-freight shipping.",
+              "The exact service area will be listed here once the kitchen address is published. In the meantime, email us to check whether your address is reachable."
+            ]
+          },
+          {
+            "h": "Packaging",
+            "p": [
+              "Puddings are sealed in cups and placed in an insulated box with ice packs. Cakes go into a rigid box with supports so they cannot shift. Every package is stamped with its production date and time."
+            ]
+          },
+          {
+            "h": "Delivery charge",
+            "p": [
+              "The delivery figure shown in the cart is an estimate for in-city delivery and is not a published tariff. The final charge is based on distance and the courier's rate on the delivery day, and is confirmed by email before the order goes into production."
+            ]
+          },
+          {
+            "h": "Self pickup",
+            "p": [
+              "Pickup can be arranged. The address and time window are sent by email once the order is confirmed — we do not publish the kitchen address openly on the website."
+            ]
+          },
+          {
+            "h": "After delivery",
+            "p": [
+              "Refrigerate puddings straight away. Product left at room temperature for more than two hours falls outside our responsibility."
+            ]
+          }
+        ]
+      },
+      "allergens": {
+        "title": "Allergens & food safety",
+        "summary": "The allergens present in our kitchen and how we handle them.",
+        "sections": [
+          {
+            "h": "Allergens in our products",
+            "p": ["Our products may contain one or more of the following:"],
+            "ul": [
+              "Dairy — fresh milk, cream, butter, cream cheese, mascarpone.",
+              "Egg — in the cakes and in the caramel pudding.",
+              "Gluten — wheat flour and biscuit in the cake line.",
+              "Tree nuts — almond flour in the opera.",
+              "Soy — soy lecithin in some couverture chocolate.",
+              "Coconut — coconut milk and coconut shavings.",
+              "Sesame — may be used as a garnish on seasonal variants."
+            ]
+          },
+          {
+            "h": "Cross-contact",
+            "p": [
+              "We work in a single kitchen with equipment used across products. Although equipment is cleaned between batches, we cannot guarantee our products are entirely free of traces of the allergens listed above.",
+              "If you have a severe allergy, please do not rely on the catalog markings alone — contact us first so we can explain how that particular variant is made."
+            ]
+          },
+          {
+            "h": "Catalog markings",
+            "p": [
+              "The \"egg-free\" and \"gluten-free\" markings in the catalog mean the ingredient is not in the recipe. They are not a statement that the product is free of cross-contact."
+            ]
+          },
+          {
+            "h": "Food safety practice",
+            "ul": [
+              "Fresh ingredients are bought on the day of production.",
+              "Every package is stamped with its production date and time.",
+              "Chilled products are packed with ice packs and are not left at room temperature before dispatch.",
+              "Equipment is cleaned between batches."
+            ]
+          },
+          {
+            "h": "Certification",
+            "p": [
+              "We do not publish a halal certification number or a processed-food distribution permit number on this website. We choose not to display any number until the document exists and can be shown. If you need such documentation for an event or a corporate order, please contact us first."
+            ]
+          }
+        ]
+      },
+      "cookies": {
+        "title": "Cookies & local storage",
+        "summary": "What this website keeps in your browser.",
+        "sections": [
+          {
+            "h": "In short",
+            "p": [
+              "This website uses no advertising cookies and no analytics cookies. We store only what is needed for the site to behave the way you expect."
+            ]
+          },
+          {
+            "h": "What we store",
+            "ul": [
+              "pk_locale — a cookie holding your language choice, so pages open in the same language when you return.",
+              "pk.cart.v1 — local storage holding the products and quantities in your cart. Product codes and counts only; no personal data.",
+              "pk.consent.v1 — local storage recording that you dismissed the cookie notice."
+            ]
+          },
+          {
+            "h": "How to clear it",
+            "p": [
+              "All of it can be cleared from your browser settings, usually under privacy or site data. Clearing it empties your cart and resets the language to the default."
+            ]
+          },
+          {
+            "h": "Third parties",
+            "p": [
+              "We load web fonts from Google Fonts. That service sets no cookies, but the font request makes your IP address visible to the provider. Beyond that, no other third party is loaded on this website."
+            ]
+          }
+        ]
+      }
+    }
+  },
+
+  "footer": {
+    "tagline": "Hand-made puddings and cakes, produced in small batches against the orders we receive.",
+    "shop": "Shop",
+    "company": "Company",
+    "legal": "Policies",
+    "contactHeading": "Contact",
+    "ownerLabel": "Person in charge",
+    "newsletterHeading": "No newsletter yet",
+    "newsletterBody": "We are not collecting email addresses for marketing. If that changes, we will announce it on this page.",
+    "rights": "All rights reserved.",
+    "builtNote": "The catalog on this website is sample data prepared for launch."
+  },
+
+  "cookieBanner": {
+    "title": "About cookies",
+    "body": "We only store your language choice and the contents of your cart. No advertising or analytics cookies.",
+    "accept": "Got it",
+    "readPolicy": "Read more"
+  },
+
+  "language": {
+    "switchTo": "Switch to {language}",
+    "current": "Current language: {language}",
+    "id": "Bahasa Indonesia",
+    "en": "English",
+    "idShort": "ID",
+    "enShort": "EN"
+  },
+
+  "validation": {
+    "required": "This field is required.",
+    "email": "That email address does not look right.",
+    "phone": "That phone number does not look right. Example: 08123456789.",
+    "minLength": "That is still too short.",
+    "maxLength": "That is too long.",
+    "date": "That date does not look right.",
+    "postalCode": "A postal code must be 5 digits.",
+    "formHasErrors": "A few fields need fixing first.",
+    "cartEmpty": "Your cart is empty.",
+    "cartTooLarge": "Too many different products in one order. Contact us for large orders.",
+    "itemUnavailable": "One of the products is no longer available.",
+    "quantity": "That quantity does not look right."
+  },
+
+  "errors": {
+    "notFound": "We could not find what you were looking for.",
+    "server": "Something broke on our side. Please try again shortly.",
+    "validation": "A few fields need fixing first.",
+    "unknown": "An unexpected error occurred.",
+    "network": "Could not connect. Check your internet connection.",
+    "retry": "Try again",
+    "page404Title": "Page not found",
+    "page404Body": "The address you opened does not exist, or it has moved.",
+    "page500Title": "Something went wrong",
+    "page500Body": "We are looking into it. Try reloading this page.",
+    "backHome": "Back to home"
+  },
+
+  "a11y": {
+    "productImage": "Illustration of {name}",
+    "decorative": "Decorative element",
+    "loading": "Loading",
+    "openInNewTab": "opens in a new tab",
+    "breadcrumb": "Breadcrumb",
+    "pagination": "Pagination",
+    "scrollLeft": "Scroll left",
+    "scrollRight": "Scroll right"
+  }
+}

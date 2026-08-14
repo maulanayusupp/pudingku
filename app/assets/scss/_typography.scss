@@ -1,0 +1,133 @@
+// =============================================================================
+// Global type scale. Component-level type lives in the component itself; this
+// file only styles bare HTML and the small set of global text classes used by
+// long-form pages (compliance, about).
+// =============================================================================
+
+@use 'functions' as fn;
+@use 'mixins' as mx;
+
+.pk-display {
+  @include mx.display;
+}
+
+.pk-eyebrow {
+  @include mx.eyebrow;
+
+  color: var(--pk-caramel-700);
+}
+
+h1 {
+  font-family: var(--pk-font-display);
+  font-size: fn.fluid(32px, 60px);
+  font-variation-settings: 'SOFT' 40, 'WONK' 1;
+  letter-spacing: var(--pk-tracking-tight);
+}
+
+h2 {
+  font-family: var(--pk-font-display);
+  font-size: fn.fluid(26px, 42px);
+  font-variation-settings: 'SOFT' 30;
+  letter-spacing: var(--pk-tracking-tight);
+}
+
+h3 {
+  font-family: var(--pk-font-display);
+  font-size: fn.fluid(20px, 28px);
+}
+
+h4 {
+  font-family: var(--pk-font-body);
+  font-size: fn.rem(18px);
+  font-weight: 700;
+}
+
+small {
+  font-size: fn.rem(13px);
+}
+
+/// Long-form article styling for compliance / about pages.
+.pk-prose {
+  max-width: 72ch;
+  color: var(--pk-text);
+  font-size: fn.rem(16px);
+  line-height: var(--pk-leading-relaxed);
+
+  > * + * {
+    margin-block-start: var(--pk-space-4);
+  }
+
+  h2 {
+    margin-block-start: var(--pk-space-8);
+  }
+
+  h3 {
+    margin-block-start: var(--pk-space-6);
+  }
+
+  h2 + *,
+  h3 + * {
+    margin-block-start: var(--pk-space-3);
+  }
+
+  ul,
+  ol {
+    padding-inline-start: var(--pk-space-5);
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  ul li {
+    position: relative;
+  }
+
+  ul li + li,
+  ol li + li {
+    margin-block-start: var(--pk-space-2);
+  }
+
+  ul li::before {
+    position: absolute;
+    color: var(--pk-caramel-600);
+    content: '\25C6'; // ◆
+    font-size: 0.62em;
+    inset-block-start: 0.62em;
+    inset-inline-start: calc(var(--pk-space-5) * -1);
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  a {
+    color: var(--pk-plum-600);
+    text-decoration: underline;
+    text-decoration-color: var(--pk-caramel-400);
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      text-decoration-color: var(--pk-caramel-600);
+    }
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  blockquote {
+    padding-inline-start: var(--pk-space-4);
+    border-inline-start: 3px solid var(--pk-caramel-400);
+    color: var(--pk-text-muted);
+    font-style: italic;
+  }
+
+  code {
+    padding: 0.15em 0.4em;
+    background: var(--pk-cream-200);
+    border-radius: var(--pk-radius-xs);
+    font-family: var(--pk-font-mono);
+    font-size: 0.9em;
+  }
+}

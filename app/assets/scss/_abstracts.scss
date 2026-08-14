@@ -1,0 +1,15 @@
+// =============================================================================
+// The only entry point components should import.
+//
+//   <style lang="scss" scoped>
+//   @use 'abstracts' as *;
+//   </style>
+//
+// It forwards functions, mixins and breakpoint helpers — all compile-time only,
+// so importing it from many components emits no duplicated CSS.
+// Design tokens are NOT forwarded here: they are emitted once by `main.scss`.
+// =============================================================================
+
+@forward 'functions';
+@forward 'mixins';
+@forward 'breakpoints';

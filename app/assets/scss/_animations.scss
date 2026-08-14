@@ -1,0 +1,145 @@
+// =============================================================================
+// Global keyframes + scroll-reveal utility.
+//
+// The reveal utility is driven by `v-reveal` (app/directives/reveal.ts), which
+// toggles `.is-revealed` through an IntersectionObserver. Elements start hidden
+// only when JS + motion are both available, so no-JS visitors still see content.
+// =============================================================================
+
+@use 'breakpoints' as bpx;
+
+@keyframes pk-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 18px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pk-wobble {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  28% {
+    transform: scale(1.08, 0.9);
+  }
+
+  48% {
+    transform: scale(0.94, 1.06);
+  }
+
+  68% {
+    transform: scale(1.03, 0.97);
+  }
+
+  84% {
+    transform: scale(0.99, 1.01);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes pk-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate3d(0, -14px, 0) rotate(1.4deg);
+  }
+}
+
+@keyframes pk-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes pk-shimmer {
+  from {
+    background-position: -160% 0;
+  }
+
+  to {
+    background-position: 260% 0;
+  }
+}
+
+@keyframes pk-blob-morph {
+  0%,
+  100% {
+    border-radius: 46% 54% 42% 58% / 52% 44% 56% 48%;
+  }
+
+  33% {
+    border-radius: 58% 42% 55% 45% / 44% 58% 42% 56%;
+  }
+
+  66% {
+    border-radius: 42% 58% 48% 52% / 58% 46% 54% 42%;
+  }
+}
+
+@keyframes pk-spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// ── Scroll reveal ────────────────────────────────────────────────────────────
+
+.pk-reveal {
+  @include bpx.motion-safe {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+    transition:
+      opacity var(--pk-duration-slow) var(--pk-ease-out),
+      transform var(--pk-duration-slow) var(--pk-ease-out);
+    will-change: opacity, transform;
+  }
+
+  &.is-revealed {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/// Staggers direct children of a revealed container. Uses `nth-child` rather
+/// than inline `style="--i:n"` so no inline CSS ever reaches the markup.
+.pk-stagger {
+  @include bpx.motion-safe {
+    @for $i from 1 through 12 {
+      > *:nth-child(#{$i}) {
+        transition-delay: #{($i - 1) * 70}ms;
+      }
+    }
+  }
+}
+
+/// Skeleton shimmer for loading states.
+.pk-skeleton {
+  background: linear-gradient(
+    100deg,
+    var(--pk-cream-200) 30%,
+    var(--pk-cream-100) 48%,
+    var(--pk-cream-200) 62%
+  );
+  background-size: 220% 100%;
+  border-radius: var(--pk-radius-md);
+  color: transparent;
+  animation: pk-shimmer 1.6s linear infinite;
+  pointer-events: none;
+  user-select: none;
+}

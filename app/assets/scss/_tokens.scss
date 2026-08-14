@@ -1,0 +1,148 @@
+// =============================================================================
+// Design tokens — the single source of truth for colour, type, space and depth.
+// Exposed as CSS custom properties so they can be read at runtime (JS-driven
+// parallax, theme experiments) without recompiling Sass.
+//
+// Palette rationale: no logo was supplied, so the brand palette is built around
+// the product itself — burnt-caramel gold on a velvet-plum ground, over a warm
+// cream paper. See CLAUDE.md → "Brand & warna".
+// =============================================================================
+
+:root {
+  // ── Brand ────────────────────────────────────────────────────────────────
+  --pk-plum-900: #1f0a18;
+  --pk-plum-800: #2e0f23;
+  --pk-plum-700: #3d1530;
+  --pk-plum-600: #4b1b39;
+  --pk-plum-500: #64264d;
+  --pk-plum-300: #9c5c84;
+  --pk-plum-100: #e7d3e0;
+
+  --pk-caramel-700: #a56a26;
+  --pk-caramel-600: #c4842f;
+  --pk-caramel-500: #d89a52;
+  --pk-caramel-400: #e6b477;
+  --pk-caramel-300: #f0c990;
+  --pk-caramel-100: #fae6cd;
+
+  --pk-cream-50: #fffaf3;
+  --pk-cream-100: #fdf6ec;
+  --pk-cream-200: #f7ebdb;
+  --pk-cream-300: #eeddc7;
+  --pk-cream-400: #ddc7ab;
+
+  --pk-ink-900: #1b1215;
+  --pk-ink-700: #3b2c31;
+  --pk-ink-500: #6b585e;
+  --pk-ink-300: #9c8b90;
+
+  // ── Support / flavour accents ────────────────────────────────────────────
+  --pk-pistachio: #7fa57c;
+  --pk-berry: #c24a63;
+  --pk-mango: #e2a13a;
+  --pk-taro: #8c6bb8;
+
+  // ── Semantic ─────────────────────────────────────────────────────────────
+  --pk-bg: var(--pk-cream-100);
+  --pk-bg-raised: #ffffff;
+  --pk-bg-sunken: var(--pk-cream-200);
+  --pk-bg-inverse: var(--pk-plum-800);
+
+  --pk-text: var(--pk-ink-900);
+  --pk-text-muted: var(--pk-ink-500);
+  --pk-text-subtle: var(--pk-ink-300);
+  --pk-text-inverse: var(--pk-cream-100);
+
+  --pk-primary: var(--pk-plum-600);
+  --pk-primary-hover: var(--pk-plum-700);
+  --pk-accent: var(--pk-caramel-500);
+  --pk-accent-hover: var(--pk-caramel-600);
+
+  --pk-border: #e5d5c1;
+  --pk-border-strong: #cdb69c;
+  --pk-focus: var(--pk-caramel-600);
+
+  --pk-success: #3f7a52;
+  --pk-warning: #b7791f;
+  --pk-danger: #b3323f;
+
+  // ── Radii — generous and uneven, echoing a set pudding ───────────────────
+  --pk-radius-xs: 6px;
+  --pk-radius-sm: 10px;
+  --pk-radius-md: 16px;
+  --pk-radius-lg: 24px;
+  --pk-radius-xl: 36px;
+  --pk-radius-pill: 999px;
+  /// Asymmetric "wobble" radius used by cards and media frames.
+  --pk-radius-blob: 46% 54% 42% 58% / 52% 44% 56% 48%;
+
+  // ── Elevation ────────────────────────────────────────────────────────────
+  --pk-shadow-xs: 0 1px 2px rgb(59 44 49 / 6%);
+  --pk-shadow-sm: 0 2px 8px rgb(59 44 49 / 8%);
+  --pk-shadow-md: 0 10px 28px -12px rgb(59 44 49 / 22%);
+  --pk-shadow-lg: 0 24px 56px -20px rgb(31 10 24 / 30%);
+  --pk-shadow-glow: 0 18px 44px -18px rgb(196 132 47 / 55%);
+
+  // ── Typography ───────────────────────────────────────────────────────────
+  --pk-font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', georgia, serif;
+  --pk-font-body: 'Plus Jakarta Sans', -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, sans-serif;
+  --pk-font-mono: ui-monospace, sfmono-regular, 'SF Mono', menlo, monospace;
+
+  --pk-leading-tight: 1.08;
+  --pk-leading-snug: 1.28;
+  --pk-leading-normal: 1.6;
+  --pk-leading-relaxed: 1.75;
+
+  --pk-tracking-tight: -0.02em;
+  --pk-tracking-normal: 0;
+  --pk-tracking-wide: 0.06em;
+  --pk-tracking-widest: 0.18em;
+
+  // ── Spacing scale (4px base) ─────────────────────────────────────────────
+  --pk-space-1: 0.25rem;
+  --pk-space-2: 0.5rem;
+  --pk-space-3: 0.75rem;
+  --pk-space-4: 1rem;
+  --pk-space-5: 1.5rem;
+  --pk-space-6: 2rem;
+  --pk-space-7: 2.5rem;
+  --pk-space-8: 3rem;
+  --pk-space-9: 4rem;
+  --pk-space-10: 5rem;
+  --pk-space-11: 6.5rem;
+  --pk-space-12: 8rem;
+
+  // ── Layout ───────────────────────────────────────────────────────────────
+  --pk-container: 1240px;
+  --pk-container-narrow: 780px;
+  --pk-container-wide: 1480px;
+  --pk-gutter: var(--pk-space-4);
+  --pk-header-height: 72px;
+
+  // ── Motion ───────────────────────────────────────────────────────────────
+  --pk-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --pk-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  /// Overshooting curve that gives interactive elements their "jelly" feel.
+  --pk-ease-jelly: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --pk-duration-fast: 140ms;
+  --pk-duration-base: 260ms;
+  --pk-duration-slow: 520ms;
+  --pk-duration-slower: 900ms;
+
+  // ── Z-index ladder ───────────────────────────────────────────────────────
+  --pk-z-base: 1;
+  --pk-z-sticky: 100;
+  --pk-z-header: 200;
+  --pk-z-overlay: 300;
+  --pk-z-drawer: 400;
+  --pk-z-modal: 500;
+  --pk-z-toast: 600;
+}
+
+@media (min-width: 48em) {
+  :root {
+    --pk-gutter: var(--pk-space-6);
+    --pk-header-height: 84px;
+  }
+}

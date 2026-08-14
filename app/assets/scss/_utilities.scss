@@ -1,0 +1,90 @@
+// =============================================================================
+// A deliberately small utility layer. Anything used more than twice inside one
+// component belongs in that component's scoped styles, not here.
+// =============================================================================
+
+@use 'functions' as fn;
+@use 'mixins' as mx;
+
+.pk-container {
+  @include mx.container;
+}
+
+.pk-container--narrow {
+  @include mx.container(var(--pk-container-narrow));
+}
+
+.pk-container--wide {
+  @include mx.container(var(--pk-container-wide));
+}
+
+.pk-section {
+  @include mx.section-space;
+}
+
+.pk-sr-only {
+  @include mx.visually-hidden;
+}
+
+/// Skip link — visible only when focused.
+.pk-skip-link {
+  position: absolute;
+  z-index: var(--pk-z-toast);
+  padding: var(--pk-space-3) var(--pk-space-5);
+  background: var(--pk-plum-700);
+  border-radius: 0 0 var(--pk-radius-md) 0;
+  color: var(--pk-text-inverse);
+  font-weight: 700;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  transform: translateY(-120%);
+  transition: transform var(--pk-duration-fast) var(--pk-ease-out);
+
+  &:focus-visible {
+    transform: none;
+  }
+}
+
+/// Text that must never be broken across lines (prices, badges).
+.pk-nowrap {
+  white-space: nowrap;
+}
+
+/// Locks page scroll while a drawer or modal is open.
+.pk-scroll-locked {
+  overflow: hidden;
+  touch-action: none;
+}
+
+/// Applied to <html> while the cart drawer is open so the header can react.
+.pk-has-overlay {
+  scrollbar-gutter: stable;
+}
+
+/// A caramel gradient text treatment used sparingly for emphasis.
+.pk-text-gradient {
+  background: linear-gradient(96deg, var(--pk-caramel-600), var(--pk-berry) 58%, var(--pk-plum-500));
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/// Divider dot used between inline meta items.
+.pk-dot::before {
+  padding-inline: 0.55em;
+  color: var(--pk-text-subtle);
+  content: '\00B7';
+}
+
+/// Print: drop chrome that has no meaning on paper.
+@media print {
+  .pk-no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: fn.rem(12px);
+  }
+}

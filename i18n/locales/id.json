@@ -1,0 +1,825 @@
+{
+  "site": {
+    "name": "Pudingku",
+    "tagline": "Puding & kue buatan tangan, per batch kecil.",
+    "shortDescription": "Sepuluh varian puding dan enam kue yang kami buat per batch kecil setiap hari."
+  },
+
+  "nav": {
+    "home": "Beranda",
+    "products": "Produk",
+    "allProducts": "Semua produk",
+    "pudding": "Puding",
+    "cake": "Kue",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "faq": "Tanya Jawab",
+    "compliance": "Kepatuhan",
+    "cart": "Keranjang",
+    "checkout": "Pemesanan",
+    "menu": "Menu",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "skipToContent": "Lompat ke konten utama"
+  },
+
+  "common": {
+    "order": "Pesan",
+    "orderNow": "Pesan sekarang",
+    "addToCart": "Masukkan keranjang",
+    "added": "Ditambahkan",
+    "viewDetail": "Lihat detail",
+    "seeAll": "Lihat semua",
+    "seeAllProducts": "Lihat semua produk",
+    "back": "Kembali",
+    "backToShop": "Kembali ke katalog",
+    "continueShopping": "Lanjut belanja",
+    "close": "Tutup",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "send": "Kirim",
+    "sending": "Mengirim…",
+    "submit": "Kirim",
+    "loading": "Memuat…",
+    "search": "Cari",
+    "searchPlaceholder": "Cari puding, kue, atau bahan…",
+    "clear": "Bersihkan",
+    "reset": "Atur ulang",
+    "filter": "Saring",
+    "sort": "Urutkan",
+    "quantity": "Jumlah",
+    "increase": "Tambah jumlah",
+    "decrease": "Kurangi jumlah",
+    "remove": "Hapus",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "free": "Gratis",
+    "from": "Mulai",
+    "optional": "opsional",
+    "required": "wajib",
+    "readMore": "Selengkapnya",
+    "copied": "Tersalin",
+    "copy": "Salin",
+    "email": "Email",
+    "phone": "Telepon",
+    "name": "Nama",
+    "or": "atau",
+    "and": "dan",
+    "yes": "Ya",
+    "no": "Tidak",
+    "language": "Bahasa",
+    "changeLanguage": "Ganti bahasa",
+    "updatedOn": "Diperbarui {date}",
+    "scrollForMore": "Gulir untuk lihat lainnya"
+  },
+
+  "units": {
+    "servingsCount": "{count} porsi | {count} porsi",
+    "itemCount": "{count} item | {count} item",
+    "leadTimeHours": "Siap dalam {count} jam | Siap dalam {count} jam",
+    "leadTimeDays": "Siap dalam {count} hari | Siap dalam {count} hari",
+    "perItem": "per item"
+  },
+
+  "categories": {
+    "all": "Semua",
+    "pudding": "Puding",
+    "cake": "Kue",
+    "puddingDescription": "Sepuluh varian dalam cup 180 ml, disajikan dingin.",
+    "cakeDescription": "Enam kue utuh untuk dibagi, dari lapis legit sampai opera.",
+    "itemsAvailable": "{count} varian",
+    "priceRange": "{min} – {max}"
+  },
+
+  "sort": {
+    "label": "Urutkan",
+    "featured": "Pilihan kami",
+    "priceAsc": "Harga terendah",
+    "priceDesc": "Harga tertinggi",
+    "nameAsc": "Nama A–Z"
+  },
+
+  "badges": {
+    "signature": "Signature",
+    "new": "Baru",
+    "bestseller-internal": "Paling sering dipesan",
+    "seasonal": "Musiman",
+    "egg-free": "Tanpa telur",
+    "gluten-free": "Tanpa gluten"
+  },
+
+  "allergens": {
+    "title": "Informasi alergen",
+    "contains": "Mengandung",
+    "none": "Tidak mengandung alergen dari daftar kami",
+    "dairy": "Produk susu",
+    "egg": "Telur",
+    "gluten": "Gluten",
+    "nut": "Kacang pohon",
+    "soy": "Kedelai",
+    "coconut": "Kelapa",
+    "sesame": "Wijen",
+    "crossContactNotice": "Dapur kami mengolah produk susu, telur, gluten, kacang, kedelai, kelapa, dan wijen di area yang sama. Kami belum bisa menjamin bebas kontaminasi silang."
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "Dapur kecil, dibuat harian",
+      "title": "Puding yang bergetar waktu sendokmu menyentuhnya",
+      "subtitle": "Sepuluh varian puding dan enam kue. Kami buat per batch kecil, jadi apa yang kamu terima dibuat untuk hari itu — bukan diambil dari stok.",
+      "ctaPrimary": "Lihat 10 varian puding",
+      "ctaSecondary": "Kenalan dengan kami",
+      "statVariants": "varian puding",
+      "statCakes": "kue utuh",
+      "statBatch": "batch kecil harian"
+    },
+    "marquee": {
+      "items": [
+        "Dibuat per batch kecil",
+        "Bahan dibeli harian",
+        "Tanpa perisa buatan pada varian buah",
+        "Dikemas dingin",
+        "Resep dikembangkan sendiri"
+      ]
+    },
+    "signature": {
+      "eyebrow": "Sepuluh signature",
+      "title": "Satu rak, sepuluh rasa",
+      "description": "Geser untuk melihat semuanya. Tiap varian punya tekstur yang berbeda — dari yang paling ringan sampai yang paling pekat.",
+      "cta": "Lihat semua varian"
+    },
+    "categories": {
+      "eyebrow": "Dua lini",
+      "title": "Puding untuk sendiri, kue untuk dibagi",
+      "description": "Puding datang dalam cup 180 ml siap santap. Kue datang utuh, untuk momen yang butuh dipotong bersama."
+    },
+    "process": {
+      "eyebrow": "Cara kami bekerja",
+      "title": "Empat langkah, tanpa jalan pintas",
+      "steps": [
+        {
+          "title": "Belanja pagi",
+          "body": "Buah, susu, dan telur dibeli di hari yang sama dengan produksi. Kalau buahnya belum bagus, varian itu kami tunda."
+        },
+        {
+          "title": "Masak per batch",
+          "body": "Satu batch berisi jumlah terbatas. Kami tidak menggandakan resep supaya panas dan tekstur tetap terkontrol."
+        },
+        {
+          "title": "Dingin perlahan",
+          "body": "Puding didinginkan bertahap, bukan langsung ke suhu terendah, supaya permukaannya tidak berair."
+        },
+        {
+          "title": "Kemas dingin",
+          "body": "Dikemas dengan ice pack dan dicatat jam keluarnya, supaya kamu tahu sampai kapan kondisinya terjaga."
+        }
+      ]
+    },
+    "promise": {
+      "eyebrow": "Yang kami janjikan",
+      "title": "Hanya yang benar-benar bisa kami penuhi",
+      "description": "Kami sengaja tidak memakai klaim yang tidak bisa kami buktikan. Berikut yang memang ada di kendali kami.",
+      "items": [
+        {
+          "title": "Tanggal produksi tertulis",
+          "body": "Setiap kemasan diberi tanggal dan jam produksi, jadi kamu tidak perlu menebak."
+        },
+        {
+          "title": "Daftar bahan terbuka",
+          "body": "Semua bahan setiap varian kami tulis di halaman produknya, termasuk yang bisa memicu alergi."
+        },
+        {
+          "title": "Salah kirim, kami ganti",
+          "body": "Kalau yang sampai berbeda dari pesanan atau rusak saat diterima, laporkan di hari yang sama dan kami ganti."
+        },
+        {
+          "title": "Tidak ada stok lama",
+          "body": "Kami memproduksi sesuai pesanan yang masuk, jadi tidak ada sisa yang dijual di hari berikutnya."
+        }
+      ]
+    },
+    "faqTeaser": {
+      "eyebrow": "Sering ditanya",
+      "title": "Sebelum kamu pesan",
+      "cta": "Lihat semua tanya jawab"
+    },
+    "cta": {
+      "eyebrow": "Siap pesan?",
+      "title": "Pilih rasanya, sisanya kami urus",
+      "description": "Pesan minimal satu hari sebelumnya untuk puding, dua hari untuk kue lapis legit dan cheesecake.",
+      "primary": "Mulai pesan",
+      "secondary": "Tanya dulu"
+    }
+  },
+
+  "products": {
+    "meta": {
+      "title": "Katalog puding & kue",
+      "description": "Sepuluh varian puding dalam cup 180 ml dan enam kue utuh. Lengkap dengan daftar bahan, informasi alergen, dan cara penyimpanan."
+    },
+    "eyebrow": "Katalog",
+    "title": "Semua yang kami buat",
+    "description": "Enam belas item, semuanya dibuat per batch kecil. Saring berdasarkan lini produk atau cari langsung berdasarkan bahan.",
+    "resultCount": "{count} produk ditemukan | {count} produk ditemukan",
+    "emptyTitle": "Tidak ada yang cocok",
+    "emptyBody": "Coba kata kunci lain, atau hapus saringannya.",
+    "filterByCategory": "Saring berdasarkan lini",
+    "loadingLabel": "Memuat katalog"
+  },
+
+  "product": {
+    "backToCatalog": "Kembali ke katalog",
+    "highlights": "Yang membedakan",
+    "ingredients": "Bahan",
+    "storage": "Penyimpanan",
+    "allergenInfo": "Alergen",
+    "details": "Detail produk",
+    "unit": "Kemasan",
+    "servings": "Porsi",
+    "netWeight": "Berat bersih",
+    "leadTime": "Waktu penyiapan",
+    "related": "Mungkin cocok juga",
+    "unavailable": "Sedang tidak tersedia",
+    "unavailableBody": "Varian ini sedang tidak kami produksi. Cek lagi lain waktu atau hubungi kami.",
+    "addedToCart": "{name} masuk keranjang",
+    "quantityLabel": "Jumlah yang dipesan",
+    "shareLabel": "Bagikan produk ini",
+    "priceNote": "Harga sudah termasuk kemasan. Ongkos kirim dihitung saat pemesanan.",
+    "notFoundTitle": "Produk tidak ditemukan",
+    "notFoundBody": "Alamat yang kamu buka tidak cocok dengan produk mana pun."
+  },
+
+  "cart": {
+    "meta": {
+      "title": "Keranjang",
+      "description": "Periksa pesanan kamu sebelum melanjutkan."
+    },
+    "title": "Keranjang",
+    "drawerTitle": "Keranjang kamu",
+    "empty": "Keranjang masih kosong",
+    "emptyBody": "Belum ada yang dipilih. Mulai dari sepuluh varian puding kami.",
+    "emptyCta": "Lihat katalog",
+    "itemCount": "{count} item di keranjang | {count} item di keranjang",
+    "removeItem": "Hapus {name} dari keranjang",
+    "summary": "Ringkasan",
+    "subtotal": "Subtotal",
+    "deliveryFee": "Ongkos kirim",
+    "deliveryFeeNote": "Perkiraan untuk pengiriman dalam kota. Ditentukan final saat pemesanan.",
+    "estimatedTotal": "Perkiraan total",
+    "freeDeliveryProgress": "Tambah {amount} lagi untuk gratis ongkir dalam kota",
+    "freeDeliveryReached": "Gratis ongkir dalam kota sudah aktif",
+    "checkout": "Lanjut ke pemesanan",
+    "clearCart": "Kosongkan keranjang",
+    "clearConfirm": "Kosongkan seluruh keranjang?",
+    "openCart": "Buka keranjang, {count} item",
+    "maxQuantityNote": "Maksimal {max} per varian dalam satu pesanan."
+  },
+
+  "checkout": {
+    "meta": {
+      "title": "Pemesanan",
+      "description": "Isi data pemesanan kamu."
+    },
+    "eyebrow": "Langkah terakhir",
+    "title": "Data pemesanan",
+    "description": "Kami butuh data ini untuk menyiapkan dan mengantar pesanan kamu.",
+    "demoNoticeTitle": "Ini alur demo",
+    "demoNoticeBody": "Belum ada sistem pembayaran yang terhubung di website ini. Menekan tombol di bawah hanya menghitung total dan membuat nomor referensi — tidak ada tagihan, tidak ada pesanan yang tersimpan, dan tidak ada notifikasi terkirim. Untuk pesanan sungguhan, kirim email ke {email}.",
+    "sectionContact": "Kontak",
+    "sectionFulfilment": "Pengambilan atau pengiriman",
+    "sectionSchedule": "Jadwal",
+    "sectionNote": "Catatan",
+    "fields": {
+      "name": "Nama lengkap",
+      "namePlaceholder": "Nama yang tertera di pesanan",
+      "email": "Email",
+      "emailPlaceholder": "nama@email.com",
+      "phone": "Nomor telepon",
+      "phonePlaceholder": "08xxxxxxxxxx",
+      "method": "Metode",
+      "pickup": "Ambil sendiri",
+      "pickupHint": "Alamat penjemputan dikirim lewat email setelah pesanan dikonfirmasi.",
+      "delivery": "Diantar",
+      "deliveryHint": "Untuk saat ini kami hanya mengantar di dalam kota.",
+      "address": "Alamat lengkap",
+      "addressPlaceholder": "Jalan, nomor, patokan",
+      "city": "Kota",
+      "cityPlaceholder": "Kota tujuan",
+      "postalCode": "Kode pos",
+      "preferredDate": "Tanggal diinginkan",
+      "preferredDateHint": "Puding butuh minimal 1 hari, kue tertentu 2–3 hari.",
+      "note": "Catatan tambahan",
+      "notePlaceholder": "Misalnya: tanpa topping kacang, atau permintaan waktu antar"
+    },
+    "submit": "Buat ringkasan pesanan",
+    "submitting": "Menghitung…",
+    "orderSummary": "Ringkasan pesanan",
+    "success": {
+      "title": "Ringkasan pesanan dibuat",
+      "reference": "Nomor referensi",
+      "body": "Simpan nomor ini. Karena belum ada sistem pembayaran, langkah berikutnya adalah mengirim nomor ini ke {email} supaya pesanan kamu benar-benar masuk antrean.",
+      "emailCta": "Kirim referensi lewat email",
+      "backHome": "Kembali ke beranda",
+      "createdAt": "Dibuat pada",
+      "noOrderTitle": "Belum ada pesanan",
+      "noOrderBody": "Belum ada ringkasan pesanan di sesi ini.",
+      "emailSubject": "Pesanan {reference}",
+      "emailBody": "Halo Pudingku, saya ingin melanjutkan pesanan dengan nomor referensi {reference}."
+    }
+  },
+
+  "about": {
+    "meta": {
+      "title": "Tentang kami",
+      "description": "Pudingku adalah dapur kecil yang membuat puding dan kue per batch kecil setiap hari."
+    },
+    "eyebrow": "Tentang",
+    "title": "Dapur kecil yang memilih tetap kecil",
+    "lead": "Pudingku berawal dari satu hal sederhana: puding yang enak biasanya kalah karena dibuat terlalu banyak sekaligus. Kami memilih arah sebaliknya.",
+    "story": {
+      "heading": "Kenapa batch kecil",
+      "paragraphs": [
+        "Puding itu jujur. Kalau perbandingan susu dan agar-agarnya meleset sedikit saja, teksturnya langsung terasa — entah terlalu keras, atau berair setelah semalam di kulkas. Perbandingan itu paling gampang dijaga kalau jumlah yang dimasak tidak terlalu banyak.",
+        "Karena itu kami membatasi jumlah per batch, dan memproduksi mengikuti pesanan yang masuk, bukan menumpuk stok. Konsekuensinya jelas: kami butuh waktu penyiapan, dan ada hari di mana varian tertentu tidak tersedia. Kami rasa itu pertukaran yang masuk akal.",
+        "Resep-resepnya kami kembangkan sendiri dan masih terus disetel. Kalau satu varian belum kami anggap benar, varian itu tidak kami jual dulu."
+      ]
+    },
+    "values": {
+      "heading": "Tiga hal yang kami pegang",
+      "items": [
+        {
+          "title": "Tulis apa adanya",
+          "body": "Daftar bahan, alergen, dan berapa lama produk bertahan kami tulis lengkap di setiap halaman produk. Kalau ada yang belum bisa kami pastikan, kami bilang belum bisa dipastikan."
+        },
+        {
+          "title": "Rasa dulu, tampilan kemudian",
+          "body": "Kami tidak menambahkan pewarna untuk membuat warna lebih mencolok. Pandan kami berwarna hijau muda dan taro kami berwarna ungu pucat karena memang begitu warna aslinya."
+        },
+        {
+          "title": "Selesaikan kalau ada masalah",
+          "body": "Salah kirim atau rusak saat diterima kami ganti, tanpa perlu diperdebatkan. Ketentuannya ada di halaman kebijakan penggantian."
+        }
+      ]
+    },
+    "transparency": {
+      "heading": "Yang belum kami punya",
+      "body": "Kami memilih tidak memasang klaim yang belum ada dokumennya. Sampai halaman ini terakhir diperbarui, kami belum mencantumkan nomor sertifikasi halal maupun izin edar pada website ini. Kalau kamu butuh dokumen legal untuk pemesanan dalam jumlah besar atau untuk acara perusahaan, hubungi kami dulu supaya kami bisa menjelaskan status terkini secara langsung.",
+      "cta": "Baca halaman kepatuhan"
+    },
+    "contactCta": {
+      "heading": "Mau tanya sesuatu?",
+      "body": "Pertanyaan soal bahan, jadwal, atau pesanan jumlah besar paling cepat dijawab lewat email.",
+      "cta": "Hubungi kami"
+    }
+  },
+
+  "contact": {
+    "meta": {
+      "title": "Kontak",
+      "description": "Hubungi Pudingku untuk pertanyaan produk, jadwal pemesanan, atau pesanan jumlah besar."
+    },
+    "eyebrow": "Kontak",
+    "title": "Sampaikan ke kami",
+    "description": "Untuk pertanyaan soal bahan, alergen, jadwal, atau pesanan jumlah besar.",
+    "directTitle": "Cara paling cepat",
+    "directBody": "Email langsung adalah jalur yang paling pasti sampai. Kami biasanya membalas dalam satu hari kerja.",
+    "formNoticeTitle": "Tentang formulir di bawah",
+    "formNoticeBody": "Formulir ini memeriksa isian kamu dan membuat nomor referensi, tetapi website ini belum terhubung ke layanan email — jadi pesannya belum benar-benar terkirim. Sampai itu tersedia, gunakan alamat email di atas.",
+    "formTitle": "Kirim pesan",
+    "fields": {
+      "name": "Nama",
+      "namePlaceholder": "Nama kamu",
+      "email": "Email",
+      "emailPlaceholder": "nama@email.com",
+      "subject": "Perihal",
+      "subjectPlaceholder": "Misalnya: pesanan 50 cup untuk acara kantor",
+      "message": "Pesan",
+      "messagePlaceholder": "Tuliskan pertanyaan kamu di sini"
+    },
+    "submit": "Kirim pesan",
+    "successTitle": "Isian kamu sudah lolos pemeriksaan",
+    "successBody": "Nomor referensi kamu {reference}. Karena pengiriman email belum aktif, salin isi pesan kamu dan kirimkan ke {email} supaya kami benar-benar menerimanya.",
+    "sendAnother": "Tulis pesan lain",
+    "infoOwner": "Penanggung jawab",
+    "infoEmail": "Email",
+    "infoHours": "Waktu balasan",
+    "infoHoursValue": "Biasanya dalam satu hari kerja",
+    "infoLocation": "Lokasi",
+    "infoLocationPending": "Alamat dapur belum kami cantumkan di website. Hubungi kami untuk informasi pengambilan.",
+    "infoPhonePending": "Nomor telepon belum tersedia untuk umum."
+  },
+
+  "faq": {
+    "meta": {
+      "title": "Tanya jawab",
+      "description": "Pertanyaan yang paling sering masuk soal pemesanan, penyimpanan, alergen, dan pengiriman."
+    },
+    "eyebrow": "Tanya jawab",
+    "title": "Yang paling sering ditanyakan",
+    "description": "Kalau pertanyaan kamu tidak ada di sini, kirim email — kami tambahkan ke daftar ini.",
+    "items": [
+      {
+        "q": "Berapa lama sebelum acara saya harus pesan?",
+        "a": "Puding butuh minimal satu hari penyiapan. Lapis legit, cheesecake yuzu, red velvet, dan opera butuh dua sampai tiga hari. Untuk pesanan di atas 50 item, hubungi kami dulu supaya kami bisa cek kapasitas."
+      },
+      {
+        "q": "Berapa lama produknya bertahan?",
+        "a": "Puding dengan buah segar (mangga, stroberi, durian) sebaiknya dihabiskan dalam dua hari. Puding lain tiga hari. Lapis legit paling awet: lima hari di suhu ruang atau dua minggu di kulkas. Semua ada di halaman produk masing-masing."
+      },
+      {
+        "q": "Apakah pudingnya bisa dibekukan?",
+        "a": "Tidak kami sarankan. Puding berbasis agar-agar akan pecah teksturnya setelah dicairkan kembali dan mengeluarkan air."
+      },
+      {
+        "q": "Ada varian tanpa telur atau tanpa gluten?",
+        "a": "Ada. Varian tanpa telur dan tanpa gluten diberi tanda di katalog. Tapi perlu kamu tahu, dapur kami mengolah telur dan gluten di area yang sama, jadi kami tidak bisa menjamin bebas kontaminasi silang."
+      },
+      {
+        "q": "Apakah bisa custom rasa atau tingkat kemanisan?",
+        "a": "Untuk pesanan di atas 30 item, kami bisa mengurangi kadar gula. Untuk rasa baru di luar katalog, kami perlu waktu uji coba — silakan tanyakan dulu."
+      },
+      {
+        "q": "Bagaimana cara pengirimannya?",
+        "a": "Dikemas dengan ice pack dan dikirim dengan kurir instan untuk dalam kota. Kami belum melayani pengiriman antarkota karena produknya perlu tetap dingin."
+      },
+      {
+        "q": "Metode pembayaran apa yang tersedia?",
+        "a": "Website ini belum terhubung ke sistem pembayaran mana pun. Sementara ini, pemesanan dan pembayaran diatur lewat email setelah kamu mengirimkan nomor referensi pesanan."
+      },
+      {
+        "q": "Kalau pesanan saya salah atau rusak?",
+        "a": "Laporkan pada hari yang sama dengan foto kemasannya. Kalau kesalahan ada di kami, kami ganti atau kembalikan pembayarannya. Detailnya ada di halaman kebijakan penggantian."
+      }
+    ],
+    "stillHaveQuestions": "Masih ada yang mau ditanyakan?",
+    "contactCta": "Kirim pertanyaan"
+  },
+
+  "compliance": {
+    "meta": {
+      "title": "Kepatuhan & kebijakan",
+      "description": "Kebijakan privasi, ketentuan layanan, penggantian, pengiriman, alergen, dan cookie Pudingku."
+    },
+    "eyebrow": "Kepatuhan",
+    "title": "Kebijakan & keterbukaan",
+    "description": "Semua ketentuan yang berlaku saat kamu memakai website ini dan memesan dari kami, ditulis sejelas yang kami bisa.",
+    "lastUpdated": "Terakhir diperbarui",
+    "updatedAt": "2026-08-14",
+    "readDocument": "Baca",
+    "backToCompliance": "Kembali ke halaman kepatuhan",
+    "statusTitle": "Status website ini",
+    "statusBody": "Website ini sudah menampilkan katalog dan alur pemesanan lengkap, tetapi belum terhubung ke sistem pembayaran maupun basis data pesanan. Semua ringkasan pesanan dan pesan kontak dihitung dan divalidasi, lalu ditampilkan kepada kamu — tidak disimpan dan tidak dikirim ke mana pun. Halaman ini akan diperbarui begitu integrasi tersebut aktif.",
+    "docs": {
+      "privacy": {
+        "title": "Kebijakan privasi",
+        "summary": "Data apa yang kami minta, kenapa, dan berapa lama disimpan.",
+        "sections": [
+          {
+            "h": "Ringkasnya",
+            "p": [
+              "Kami hanya meminta data yang benar-benar dibutuhkan untuk menyiapkan dan mengantarkan pesanan. Kami tidak menjual data kamu ke siapa pun."
+            ]
+          },
+          {
+            "h": "Data yang kami kumpulkan",
+            "p": ["Saat kamu mengisi formulir pemesanan atau kontak, kami memproses:"],
+            "ul": [
+              "Nama, alamat email, dan nomor telepon.",
+              "Alamat pengiriman, kota, dan kode pos — hanya jika kamu memilih diantar.",
+              "Tanggal yang kamu inginkan dan catatan tambahan yang kamu tulis sendiri."
+            ]
+          },
+          {
+            "h": "Yang disimpan di perangkat kamu",
+            "p": [
+              "Isi keranjang belanja disimpan di penyimpanan lokal peramban kamu (localStorage) supaya tidak hilang saat halaman dimuat ulang. Data ini ada di perangkat kamu, tidak dikirim ke server kami, dan bisa kamu hapus kapan saja lewat pengaturan peramban.",
+              "Pilihan bahasa disimpan dalam satu cookie bernama pk_locale supaya website terbuka dalam bahasa yang sama saat kamu kembali."
+            ]
+          },
+          {
+            "h": "Kondisi saat ini",
+            "p": [
+              "Pada versi website ini, data yang kamu isi di formulir tidak disimpan di basis data kami dan tidak dikirim ke layanan pihak ketiga mana pun. Data hanya diproses sementara di server untuk menghitung total dan memeriksa isian, lalu hilang setelah jawaban dikirim ke peramban kamu.",
+              "Begitu sistem pemesanan sungguhan aktif, bagian ini akan kami perbarui dengan penjelasan tempat penyimpanan, jangka waktu simpan, dan pihak ketiga yang terlibat."
+            ]
+          },
+          {
+            "h": "Layanan pihak ketiga",
+            "p": [
+              "Website ini memuat berkas huruf (font) dari Google Fonts saat halaman dibuka, sehingga alamat IP kamu bisa terlihat oleh penyedia tersebut. Kami tidak memasang alat analitik, piksel iklan, maupun pelacak pihak ketiga lainnya."
+            ]
+          },
+          {
+            "h": "Hak kamu",
+            "p": [
+              "Kamu berhak meminta salinan, koreksi, atau penghapusan data yang kami miliki tentang kamu, dan berhak menarik persetujuan kapan saja. Kirim permintaan ke alamat email di halaman kontak; kami akan menanggapi dalam waktu wajar."
+            ]
+          },
+          {
+            "h": "Anak-anak",
+            "p": [
+              "Website ini tidak ditujukan untuk anak di bawah 13 tahun dan kami tidak dengan sengaja mengumpulkan data mereka."
+            ]
+          },
+          {
+            "h": "Perubahan kebijakan",
+            "p": [
+              "Kalau kebijakan ini berubah, tanggal di bagian atas halaman akan kami perbarui. Perubahan yang berdampak besar akan kami tuliskan juga di halaman kepatuhan."
+            ]
+          }
+        ]
+      },
+      "terms": {
+        "title": "Ketentuan layanan",
+        "summary": "Dasar kesepakatan saat kamu memesan dari kami.",
+        "sections": [
+          {
+            "h": "Tentang ketentuan ini",
+            "p": [
+              "Dengan menggunakan website ini dan mengirimkan pesanan, kamu setuju dengan ketentuan di halaman ini. Kalau ada bagian yang tidak kamu setujui, sebaiknya jangan melanjutkan pemesanan."
+            ]
+          },
+          {
+            "h": "Pesanan dan penerimaannya",
+            "p": [
+              "Ringkasan pesanan yang dibuat website ini belum berarti pesanan kamu diterima. Pesanan baru dianggap diterima setelah kami membalas dan mengonfirmasi jadwal serta ketersediaannya.",
+              "Kami berhak menolak atau membatalkan pesanan bila bahan tidak tersedia, kapasitas produksi penuh, atau data yang diberikan tidak lengkap."
+            ]
+          },
+          {
+            "h": "Harga",
+            "p": [
+              "Semua harga ditulis dalam Rupiah dan sudah termasuk kemasan. Ongkos kirim dihitung terpisah. Harga dapat berubah jika harga bahan berubah; harga yang berlaku adalah harga saat pesanan kamu kami konfirmasi."
+            ]
+          },
+          {
+            "h": "Pembayaran",
+            "p": [
+              "Belum ada sistem pembayaran otomatis di website ini. Cara pembayaran disepakati lewat email setelah pesanan dikonfirmasi. Jangan pernah mengirimkan data kartu atau kredensial perbankan melalui formulir di website ini."
+            ]
+          },
+          {
+            "h": "Kewajiban kamu",
+            "ul": [
+              "Memberikan alamat dan nomor kontak yang bisa dihubungi pada hari pengiriman.",
+              "Memberitahukan alergi atau pantangan sebelum pesanan diproses.",
+              "Menyimpan produk sesuai petunjuk penyimpanan segera setelah diterima."
+            ]
+          },
+          {
+            "h": "Batasan tanggung jawab",
+            "p": [
+              "Tanggung jawab kami atas satu pesanan terbatas pada nilai pesanan tersebut. Kami tidak bertanggung jawab atas kerusakan produk yang terjadi setelah diterima akibat penyimpanan yang tidak sesuai petunjuk."
+            ]
+          },
+          {
+            "h": "Hak kekayaan intelektual",
+            "p": [
+              "Nama, teks, ilustrasi produk, dan tampilan website ini adalah milik kami. Silakan membagikan tautannya, tetapi jangan menggunakan materinya untuk keperluan komersial tanpa izin tertulis."
+            ]
+          },
+          {
+            "h": "Hukum yang berlaku",
+            "p": [
+              "Ketentuan ini tunduk pada hukum yang berlaku di Republik Indonesia."
+            ]
+          }
+        ]
+      },
+      "refund": {
+        "title": "Pembatalan & penggantian",
+        "summary": "Kapan pesanan bisa dibatalkan, dan kapan kami mengganti.",
+        "sections": [
+          {
+            "h": "Kenapa aturannya cukup ketat",
+            "p": [
+              "Semua produk kami dibuat setelah pesanan masuk dan tidak bisa dijual ulang. Karena itu batas waktu pembatalan mengikuti kapan produksi dimulai."
+            ]
+          },
+          {
+            "h": "Pembatalan",
+            "ul": [
+              "Lebih dari 24 jam sebelum tanggal pengambilan atau pengiriman: pesanan bisa dibatalkan penuh.",
+              "Kurang dari 24 jam: produksi biasanya sudah berjalan, sehingga pembatalan tidak bisa kami terima.",
+              "Perubahan tanggal bisa diminta sekali, selama masih lebih dari 24 jam sebelum jadwal."
+            ]
+          },
+          {
+            "h": "Penggantian atau pengembalian dana",
+            "p": ["Kami mengganti produk atau mengembalikan pembayaran bila:"],
+            "ul": [
+              "Item yang kamu terima berbeda dari yang dipesan.",
+              "Produk rusak atau tumpah saat diterima.",
+              "Produk sudah tidak layak konsumsi saat diterima meskipun rantai dinginnya kami jaga."
+            ]
+          },
+          {
+            "h": "Cara melaporkan",
+            "p": [
+              "Laporkan pada hari yang sama dengan pesanan diterima, sertakan nomor referensi dan foto kemasan beserta isinya. Semakin cepat dilaporkan, semakin mudah kami menelusuri di mana masalahnya."
+            ]
+          },
+          {
+            "h": "Yang tidak termasuk",
+            "ul": [
+              "Perbedaan selera — misalnya rasanya kurang manis menurut kamu.",
+              "Produk yang rusak karena disimpan di luar kulkas lebih lama dari petunjuk.",
+              "Alamat yang salah tulis sehingga kurir tidak menemukan penerima."
+            ]
+          }
+        ]
+      },
+      "shipping": {
+        "title": "Pengiriman & pengambilan",
+        "summary": "Wilayah layanan, cara pengemasan, dan waktu penyiapan.",
+        "sections": [
+          {
+            "h": "Waktu penyiapan",
+            "p": [
+              "Puding butuh minimal 24 jam. Durian butuh 48 jam karena kami menyiapkan buahnya lebih dulu. Lapis legit membutuhkan 72 jam. Waktu penyiapan setiap produk tertulis di halaman produknya masing-masing."
+            ]
+          },
+          {
+            "h": "Wilayah pengiriman",
+            "p": [
+              "Saat ini kami hanya mengantar di dalam kota dengan kurir instan, karena produk harus tetap dingin sepanjang perjalanan. Kami belum melayani pengiriman antarkota atau ekspedisi reguler.",
+              "Wilayah layanan yang pasti akan kami cantumkan di sini setelah alamat dapur dipublikasikan. Untuk sementara, tanyakan lewat email apakah alamat kamu terjangkau."
+            ]
+          },
+          {
+            "h": "Pengemasan",
+            "p": [
+              "Puding dikemas dalam cup tertutup dan dimasukkan ke kotak berinsulasi bersama ice pack. Kue dikemas dalam kotak kaku dengan penahan agar tidak bergeser. Setiap kemasan diberi tanggal dan jam produksi."
+            ]
+          },
+          {
+            "h": "Ongkos kirim",
+            "p": [
+              "Angka ongkos kirim yang muncul di keranjang adalah perkiraan untuk pengiriman dalam kota dan belum merupakan tarif resmi. Biaya final dihitung berdasarkan jarak dan tarif kurir pada hari pengiriman, lalu dikonfirmasi lewat email sebelum pesanan diproses."
+            ]
+          },
+          {
+            "h": "Pengambilan sendiri",
+            "p": [
+              "Pengambilan sendiri bisa diatur. Alamat dan waktu pengambilan dikirimkan lewat email setelah pesanan dikonfirmasi — kami tidak mencantumkan alamat dapur secara terbuka di website."
+            ]
+          },
+          {
+            "h": "Setelah pesanan diterima",
+            "p": [
+              "Segera masukkan puding ke kulkas. Produk yang dibiarkan di suhu ruang lebih dari dua jam sudah di luar tanggung jawab kami."
+            ]
+          }
+        ]
+      },
+      "allergens": {
+        "title": "Alergen & keamanan pangan",
+        "summary": "Alergen yang ada di dapur kami dan cara kami menanganinya.",
+        "sections": [
+          {
+            "h": "Alergen dalam produk kami",
+            "p": ["Produk kami dapat mengandung satu atau lebih dari bahan berikut:"],
+            "ul": [
+              "Produk susu — susu segar, krim, mentega, keju krim, mascarpone.",
+              "Telur — pada kue dan pada puding karamel.",
+              "Gluten — tepung terigu dan biskuit pada lini kue.",
+              "Kacang pohon — tepung almond pada opera.",
+              "Kedelai — lesitin kedelai pada beberapa cokelat masak.",
+              "Kelapa — santan dan serutan kelapa.",
+              "Wijen — dapat digunakan sebagai hiasan pada varian musiman."
+            ]
+          },
+          {
+            "h": "Kontaminasi silang",
+            "p": [
+              "Kami bekerja di satu dapur dengan peralatan yang dipakai bergantian. Meskipun peralatan dibersihkan di antara batch, kami tidak dapat menjamin produk kami sepenuhnya bebas dari jejak alergen yang tersebut di atas.",
+              "Kalau kamu memiliki alergi berat, sebaiknya jangan mengandalkan penandaan di katalog saja — hubungi kami dulu supaya kami bisa menjelaskan cara kami mengolah varian tersebut."
+            ]
+          },
+          {
+            "h": "Penandaan di katalog",
+            "p": [
+              "Tanda \"tanpa telur\" dan \"tanpa gluten\" pada katalog berarti bahan tersebut tidak ada dalam resep. Tanda itu bukan pernyataan bebas kontaminasi silang."
+            ]
+          },
+          {
+            "h": "Praktik keamanan pangan",
+            "ul": [
+              "Bahan segar dibeli pada hari produksi.",
+              "Setiap kemasan diberi tanggal dan jam produksi.",
+              "Produk dingin dikemas dengan ice pack dan tidak dibiarkan di suhu ruang sebelum dikirim.",
+              "Peralatan dibersihkan di antara batch."
+            ]
+          },
+          {
+            "h": "Perizinan",
+            "p": [
+              "Kami belum mencantumkan nomor sertifikasi halal maupun izin edar pangan olahan di website ini. Kami memilih tidak menampilkan nomor apa pun sampai dokumennya ada dan bisa kami tunjukkan. Kalau kamu memerlukan dokumen tersebut untuk keperluan acara atau perusahaan, hubungi kami lebih dulu."
+            ]
+          }
+        ]
+      },
+      "cookies": {
+        "title": "Cookie & penyimpanan lokal",
+        "summary": "Apa saja yang website ini simpan di peramban kamu.",
+        "sections": [
+          {
+            "h": "Ringkasnya",
+            "p": [
+              "Website ini tidak memakai cookie iklan maupun cookie analitik. Yang kami simpan hanya hal-hal yang dibutuhkan supaya website berfungsi seperti yang kamu harapkan."
+            ]
+          },
+          {
+            "h": "Yang kami simpan",
+            "ul": [
+              "pk_locale — cookie berisi pilihan bahasa kamu, supaya halaman terbuka dalam bahasa yang sama saat kembali.",
+              "pk.cart.v1 — penyimpanan lokal berisi daftar produk dan jumlah di keranjang kamu. Hanya kode produk dan jumlahnya; tidak ada data pribadi.",
+              "pk.consent.v1 — penyimpanan lokal yang mencatat bahwa kamu sudah menutup pemberitahuan cookie."
+            ]
+          },
+          {
+            "h": "Cara menghapusnya",
+            "p": [
+              "Semuanya bisa dihapus lewat pengaturan peramban kamu, biasanya di bagian privasi atau data situs. Menghapusnya akan mengosongkan keranjang dan mengembalikan bahasa ke pengaturan awal."
+            ]
+          },
+          {
+            "h": "Pihak ketiga",
+            "p": [
+              "Kami memuat berkas huruf dari Google Fonts. Layanan tersebut tidak memasang cookie, tetapi permintaan berkasnya membuat alamat IP kamu terlihat oleh penyedia. Selain itu, tidak ada pihak ketiga lain yang dimuat di website ini."
+            ]
+          }
+        ]
+      }
+    }
+  },
+
+  "footer": {
+    "tagline": "Puding dan kue buatan tangan, dibuat per batch kecil mengikuti pesanan.",
+    "shop": "Belanja",
+    "company": "Perusahaan",
+    "legal": "Kebijakan",
+    "contactHeading": "Kontak",
+    "ownerLabel": "Penanggung jawab",
+    "newsletterHeading": "Belum ada buletin",
+    "newsletterBody": "Kami belum mengumpulkan alamat email untuk promosi. Kalau nanti ada, akan kami umumkan di halaman ini.",
+    "rights": "Hak cipta dilindungi.",
+    "builtNote": "Katalog di website ini adalah data contoh untuk keperluan peluncuran."
+  },
+
+  "cookieBanner": {
+    "title": "Soal cookie",
+    "body": "Kami hanya menyimpan pilihan bahasa dan isi keranjang kamu. Tidak ada cookie iklan atau analitik.",
+    "accept": "Mengerti",
+    "readPolicy": "Baca selengkapnya"
+  },
+
+  "language": {
+    "switchTo": "Ganti ke {language}",
+    "current": "Bahasa saat ini: {language}",
+    "id": "Bahasa Indonesia",
+    "en": "English",
+    "idShort": "ID",
+    "enShort": "EN"
+  },
+
+  "validation": {
+    "required": "Bagian ini wajib diisi.",
+    "email": "Alamat email belum benar.",
+    "phone": "Nomor telepon belum benar. Contoh: 08123456789.",
+    "minLength": "Isinya masih terlalu pendek.",
+    "maxLength": "Isinya terlalu panjang.",
+    "date": "Tanggal belum benar.",
+    "postalCode": "Kode pos harus 5 angka.",
+    "formHasErrors": "Ada isian yang perlu diperbaiki dulu.",
+    "cartEmpty": "Keranjang kamu masih kosong.",
+    "cartTooLarge": "Terlalu banyak jenis produk dalam satu pesanan. Hubungi kami untuk pesanan besar.",
+    "itemUnavailable": "Ada produk yang sudah tidak tersedia.",
+    "quantity": "Jumlah pesanan tidak wajar."
+  },
+
+  "errors": {
+    "notFound": "Yang kamu cari tidak ditemukan.",
+    "server": "Ada gangguan di sisi kami. Coba lagi sebentar lagi.",
+    "validation": "Ada isian yang perlu diperbaiki dulu.",
+    "unknown": "Terjadi kesalahan yang tidak terduga.",
+    "network": "Tidak bisa terhubung. Periksa koneksi internet kamu.",
+    "retry": "Coba lagi",
+    "page404Title": "Halaman tidak ditemukan",
+    "page404Body": "Alamat yang kamu buka tidak ada, atau sudah dipindahkan.",
+    "page500Title": "Ada yang tidak beres",
+    "page500Body": "Kami sedang memperbaikinya. Coba muat ulang halaman ini.",
+    "backHome": "Kembali ke beranda"
+  },
+
+  "a11y": {
+    "productImage": "Ilustrasi produk {name}",
+    "decorative": "Elemen dekoratif",
+    "loading": "Sedang memuat",
+    "openInNewTab": "membuka di tab baru",
+    "breadcrumb": "Jejak navigasi",
+    "pagination": "Navigasi halaman",
+    "scrollLeft": "Geser ke kiri",
+    "scrollRight": "Geser ke kanan"
+  }
+}

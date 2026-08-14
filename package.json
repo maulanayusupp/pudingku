@@ -1,0 +1,47 @@
+{
+  "name": "pudingku",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt typecheck",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "art:products": "node scripts/generate-product-art.mjs",
+    "art:favicon": "node scripts/generate-favicons.mjs",
+    "art:all": "npm run art:products && npm run art:favicon"
+  },
+  "dependencies": {
+    "@nuxt/fonts": "^0.14.0",
+    "@nuxt/icon": "^2.5.0",
+    "@nuxt/image": "^2.1.0",
+    "@nuxtjs/i18n": "^10.6.0",
+    "@nuxtjs/robots": "^6.1.4",
+    "@nuxtjs/sitemap": "^8.3.4",
+    "@pinia/nuxt": "^1.0.2",
+    "@vueuse/nuxt": "^14.4.0",
+    "nuxt": "^4.5.2",
+    "nuxt-schema-org": "^6.2.9",
+    "pinia": "^4.0.3",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@iconify-json/ph": "^1.2.2",
+    "@nuxt/eslint": "^1.9.0",
+    "eslint": "^9.0.0",
+    "png-to-ico": "^3.0.2",
+    "sass-embedded": "^1.102.0",
+    "sharp": "^0.35.3",
+    "typescript": "^5.9.0",
+    "vue-tsc": "^3.3.9"
+  }
+}

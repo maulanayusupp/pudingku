@@ -1,0 +1,15 @@
+// =============================================================================
+// Route-change progress bar.
+// Nuxt renders `<NuxtLoadingIndicator>`; this restyles it to the brand caramel
+// with a soft "drip" glow instead of the default flat bar.
+// =============================================================================
+
+.nuxt-loading-indicator {
+  background: linear-gradient(
+    90deg,
+    var(--pk-plum-600),
+    var(--pk-caramel-500) 45%,
+    var(--pk-berry)
+  ) !important;
+  box-shadow: 0 0 14px rgb(216 154 82 / 65%);
+}

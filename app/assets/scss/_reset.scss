@@ -1,0 +1,122 @@
+// =============================================================================
+// Modern reset. Opinionated only where the brand needs it.
+// =============================================================================
+
+@use 'breakpoints' as bpx;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-block-start: calc(var(--pk-header-height) + var(--pk-space-5));
+  tab-size: 4;
+
+  @include bpx.reduced-motion {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  min-height: 100svh;
+  background: var(--pk-bg);
+  color: var(--pk-text);
+  font-family: var(--pk-font-body);
+  font-size: 1rem;
+  line-height: var(--pk-leading-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+img,
+picture,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: var(--pk-leading-tight);
+  text-wrap: balance;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+hr {
+  border: 0;
+  border-block-start: 1px solid var(--pk-border);
+}
+
+// Anything focusable keeps a visible ring unless a component overrides it with
+// its own `focus-ring` mixin call.
+:focus-visible {
+  outline: 2px solid var(--pk-focus);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--pk-caramel-300);
+  color: var(--pk-plum-800);
+}
+
+@include bpx.reduced-motion {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

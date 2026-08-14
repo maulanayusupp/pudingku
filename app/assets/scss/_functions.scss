@@ -1,0 +1,52 @@
+// =============================================================================
+// Pure Sass helpers. Nothing here emits CSS on its own.
+// =============================================================================
+
+@use 'sass:math';
+@use 'sass:list';
+@use 'sass:meta';
+
+$root-font-size: 16px !default;
+
+/// Convert a px value to rem. `rem(24px)` → `1.5rem`
+@function rem($px) {
+  @if math.is-unitless($px) {
+    $px: $px * 1px;
+  }
+
+  @return math.div($px, $root-font-size) * 1rem;
+}
+
+/// Strip the unit from a number. `strip(1.5rem)` → `1.5`
+@function strip($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+/// Fluid value that interpolates between two sizes across two viewport widths.
+/// Produces a `clamp()` so it stays accessible when the user zooms.
+///
+/// `fluid(28px, 64px)` → clamp(1.75rem, ... , 4rem)
+@function fluid($min, $max, $from: 22.5em, $to: 80em) {
+  $min-rem: rem($min);
+  $max-rem: rem($max);
+  $slope: math.div(strip($max-rem) - strip($min-rem), strip($to) - strip($from));
+  $intercept: strip($min-rem) - ($slope * strip($from));
+
+  @return clamp(
+    #{$min-rem},
+    #{math.round($intercept * 1000) * 0.001}rem + #{math.round($slope * 10000) * 0.01}vw,
+    #{$max-rem}
+  );
+}
+
+/// Build a comma-joined `transition` shorthand for several properties at once.
+/// `transition-list((opacity, transform), 260ms, var(--pk-ease-out))`
+@function transition-list($props, $duration: var(--pk-duration-base), $easing: var(--pk-ease-out)) {
+  $out: ();
+
+  @each $prop in $props {
+    $out: list.append($out, #{$prop} #{$duration} #{$easing}, comma);
+  }
+
+  @return $out;
+}
